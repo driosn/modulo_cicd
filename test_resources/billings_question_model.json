@@ -1,0 +1,19 @@
+{
+"billings": [
+  {
+      "id": "89618e54-b40e-40f0-b7da-47a892c03bbf",
+      "invoiceMonth": 12,
+      "invoiceYear": 2022
+  },
+  {
+      "id": "e81dd917-1033-492f-b219-a8c0adef85f6",
+      "invoiceMonth": 5,
+      "invoiceYear": 2021
+  },
+  {
+      "id": "99bb3162-9c0c-4c9a-ba90-a7693cb72b43",
+      "invoiceMonth": 12,
+      "invoiceYear": 2020
+  }
+]
+}

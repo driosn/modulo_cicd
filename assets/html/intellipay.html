@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <input id="intellipay-email" class="ipayfield" data-ipayname="email" type="hidden" value="" />
+    <input id="intellipay-account" class="ipayfield" data-ipayname="account" type="hidden" value="" />
+	<input id="intellipay-invoice" class="ipayfield" data-ipayname="invoice" type="hidden" value="" />
+    <input id='intellipay-amount' class="ipayfield" data-ipayname="amount"  type="hidden" value="">
+
+    <script>
+        var isFlutterInAppWebViewReady = false;
+        window.addEventListener("flutterInAppWebViewPlatformReady", function(event) {
+            isFlutterInAppWebViewReady = true;
+        });
+
+        function addToHeader(code) {
+		    const head = document.getElementsByTagName('head')[0];
+		    if(code.startsWith('<script')) {
+			    const rg = document.createRange();
+			    head.appendChild(rg.createContextualFragment(code));
+		    } else {
+			    const script = document.createElement('script');
+			    script.type = 'text/javascript';
+			    script.text = code;
+			    head.appendChild(script);
+		    }
+	    }
+
+        function initializeIntellipay() {
+            intellipay.initialize();            
+
+        }
+
+        function setEmail(email) {
+            const emailInput = document.getElementById('intellipay-email');
+            if (emailInput) {
+                emailInput.value = email;
+            }
+        }
+
+        function setCreditCardAmount(amount) {
+            const amountInput = document.getElementById('intellipay-amount');
+            if (amountInput) {
+                
+                amountInput.value = amount;
+            }
+        }
+
+        function setPassthrough(passThrough) {
+            const account = document.getElementById('intellipay-account');
+            if (account) {
+                account.value = passThrough;
+            }
+        }
+
+        function setToken(token) {
+            const invoice = document.getElementById('intellipay-invoice');
+            if (invoice) {
+                invoice.value = token;
+            }
+        }
+
+        function openIntellipay() {
+            intellipay.runOnApproval((resp) => {
+                console.log('ON APPROVAL');
+                if (isFlutterInAppWebViewReady) {
+                    window.flutter_inappwebview.callHandler('fl_approved', ['APPROVED']);
+                }   
+            });
+            intellipay.runOnNonApproval((resp) => {
+                console.log('ON NON APPROVAL')
+                if (isFlutterInAppWebViewReady) {
+                    window.flutter_inappwebview.callHandler('fl_non_approved', ['NON APPROVED']);
+                }
+            });
+            intellipay.runOnClose(() => {
+                console.log('ON CLOSE');
+                if (isFlutterInAppWebViewReady) {
+                    window.flutter_inappwebview.callHandler('fl_close', ['CLOSE']);
+                }
+            });
+
+            intellipay.onSubmit();
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "paymentProcessor": {
+        "paymentProcessorType": "IntelliPay",
+        "paymentProcessorTypeDescription": "IntelliPay"
+    },
+    "bankAccountOption": {
+        "bankAccountType": "Checking",
+        "bankAccountTypeDescription": "Checking"
+    },
+    "bankRoutingNumber": "091408734",
+    "bankAccountEnding": "X222",
+    "maskedBankAccountNumber": "2XXXX222",
+    "creditCardEnding": "",
+    "maskedCreditCardAccountNumber": ""
+}

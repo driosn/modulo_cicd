@@ -1,0 +1,39 @@
+{
+    "images" : [
+      {
+        "filename" : "appicon_ios_1x.png",
+        "idiom" : "universal",
+        "platform" : "ios",
+        "size" : "1024x1024"
+      },
+      {
+        "filename" : "appicon_ios_2x.png",
+        "idiom" : "universal",
+        "platform" : "ios",
+        "size" : "2048x2048"
+      },
+      {
+        "filename" : "appicon_ios_3x.png",
+        "idiom" : "universal",
+        "platform" : "ios",
+        "size" : "3072x3072"
+      },
+      {
+        "filename" : "appicon_ios_4x.png",
+        "idiom" : "universal",
+        "platform" : "ios",
+        "size" : "4096x4096"
+      },
+      {
+        "filename" : "appicon_ios_5x.png",
+        "idiom" : "universal",
+        "platform" : "ios",
+        "size" : "512x512"
+      }
+    ],
+    "info" : {
+      "author" : "xcode",
+      "version" : 1
+    }
+  }
+  

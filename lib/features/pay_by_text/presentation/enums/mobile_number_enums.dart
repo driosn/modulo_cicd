@@ -1,0 +1,4 @@
+enum MobilePhoneType {
+  userMobilePhone,
+  aDifferentMobilePhone,
+}

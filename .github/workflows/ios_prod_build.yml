@@ -1,0 +1,196 @@
+name: iOS Build Prod
+
+on:
+    workflow_dispatch:
+        inputs:
+            # USE_PUBSPEC:
+            #   description: 'Use the version from the pubspec.yaml file. If false, it will use the BUILD_NAME and BUILD_NUMBER'
+            #   required: true
+            #   default: true
+            #   type: boolean
+            # BUILD_NAME:
+            #   description: 'The build name. i.e. 0.0.4'
+            #   required: false
+            #   default: '0.0.0'
+            #   type: string
+            # BUILD_NUMBER:
+            #   description: 'The build number. i.e. 109'
+            #   required: false
+            #   default: '0'
+            #   type: string
+            UPLOAD_TO_BROWSER_STACK:
+              description: 'Whether or not to upload to BrowserStack'
+              required: false
+              default: true
+              type: boolean
+            UPLOAD_ARTIFACTS_TO_GITHUB:
+              description: 'Whether or not to upload to GitHub for manual download'
+              required: false
+              default: true
+              type: boolean
+            # UPLOAD_TO_TESTFLIGHT:
+            #   description: 'Whether or not to upload to TestFlight'
+            #   required: false
+            #   default: false
+            #   type: boolean
+            ENVIRONMENT:
+              description: 'The environment to build for'
+              required: false
+              default: 'production'
+              type: choice
+              options:
+               # - qa
+                - production
+env:
+  # Setting an environment variable with the value of a configuration variable
+  # BUILD_NAME: ${{ github.event.inputs.BUILD_NAME }}
+  # BUILD_NUMBER: ${{ github.event.inputs.BUILD_NUMBER}}
+  # USE_PUBSPEC: ${{ github.event.inputs.USE_PUBSPEC || true }} # default to true if we trigger the workflow from a push/pull request
+  USE_PUBSPEC: true
+  UPLOAD_TO_BROWSER_STACK: ${{ github.event.inputs.UPLOAD_TO_BROWSER_STACK || false }} # default to false if we trigger the workflow from a push/pull request
+  UPLOAD_ARTIFACTS_TO_GITHUB: ${{ github.event.inputs.UPLOAD_ARTIFACTS_TO_GITHUB || false }} # default to false if we trigger the workflow from a push/pull request
+  BROWSERSTACK_LOGIN: ${{ secrets.BROWSERSTACK_LOGIN }}
+  FLAVOR: "prod"
+
+jobs:
+  build:
+    runs-on: macos-latest
+    environment: ${{ github.event.inputs.ENVIRONMENT }}
+    steps:
+      - name: Display build environment variables
+        id: displayBuildEnv
+        run: |
+          echo "env.USE_PUBSPEC: ${{ env.USE_PUBSPEC }}"
+          echo "env.BUILD_NAME: ${{ env.BUILD_NAME }}"
+          echo "env.BUILD_NUMBER: ${{ env.BUILD_NUMBER }}"
+          echo "env.UPLOAD_TO_BROWSER_STACK: ${{ env.UPLOAD_TO_BROWSER_STACK }}"
+          echo "github.event.inputs.ENVIRONMENT: ${{ github.event.inputs.ENVIRONMENT }}"
+          echo "env.ENVIRONMENT: ${{ env.ENVIRONMENT }}"
+          echo "env.FLAVOR: ${{ env.FLAVOR }}"
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.24.0"
+          channel: 'stable'
+          architecture: x64
+
+      - name: List available Xcode versions
+        run: |
+          sudo xcode-select -p
+          ls -l /Applications/Xcode*.app
+
+      # Note, this is a workaround for the issue with the default Xcode version is 15.4 and we need to use 16.x for the new iOS requirement. See https://manageamerica.atlassian.net/browse/RMST-1822
+      - name: Select the Xcode version we want to use.
+        run: sudo xcode-select -s /Applications/Xcode_16.1.app/Contents/Developer
+
+      - name: Verify Xcode version
+        run: xcodebuild -version
+
+      - name: Switch version based on pubspec flag
+        run: |
+          if [[ ${{ env.USE_PUBSPEC }} == 'true' ]]; then
+              echo "Getting version from pubspec"
+              version=$(grep '^version: ' pubspec.yaml | cut -d ' ' -f 2 | tr -d '\r')
+          else
+              echo "Getting version from build vars"
+              version=${{env.BUILD_NAME}}+${{env.BUILD_NUMBER}}
+          fi
+          echo "VERSION=$version" >> $GITHUB_ENV
+
+      - name: Echo environment version
+        run: |
+            echo "Env version: ${{ env.VERSION }}"
+
+      - run: pod cache clean --all
+
+      - name: Decode And Store Google Services Info.Plist Config
+        env:
+          IOS_GOOGLE_SERVICES_INFO_PLIST_CONFIG_BASE64: '${{ secrets.IOS_GOOGLE_SERVICES_INFO_PLIST_CONFIG_BASE64 }}'
+        run: |
+          ios_firebase_path=ios/Runner/firebase/${{ env.FLAVOR }}
+          mkdir -p $ios_firebase_path
+          echo $IOS_GOOGLE_SERVICES_INFO_PLIST_CONFIG_BASE64 | base64 --decode > $ios_firebase_path/GoogleService-info.plist
+
+      - name: Decode And Store Flutter Firebase Options
+        env:
+          FLUTTER_FIREBASE_OPTIONS_BASE64: '${{ secrets.FLUTTER_FIREBASE_OPTIONS_BASE64 }}'
+        run: |
+          echo $FLUTTER_FIREBASE_OPTIONS_BASE64 | base64 --decode > lib/firebase_options_${{ env.FLAVOR }}.dart
+
+      - run: flutter pub get
+
+      - name: Run Tests
+        run: flutter test
+
+      - name: Install Pods
+        working-directory: ./ios
+        run: arch -arm64 pod install
+
+      - name: Install the CodeMagic CLI
+        run: pip install codemagic-cli-tools
+
+      - name: Initialize keychain
+        run: keychain initialize
+
+      - name: Set up Provisioning Profile
+        env:
+          IOS_MOBILE_PROVISION_BASE64: ${{ secrets.IOS_MOBILE_PROVISION_BASE64 }}
+        run: |
+          PROFILES_HOME="$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$PROFILES_HOME"
+          PROFILE_PATH="$(mktemp "$PROFILES_HOME"/$(uuidgen).mobileprovision)"
+          echo ${IOS_MOBILE_PROVISION_BASE64} | base64 --decode > "$PROFILE_PATH"
+          echo "Saved provisioning profile $PROFILE_PATH"
+
+      - name: Set up Distribution Certificate
+        env:
+          IOS_APP_STORE_CERTIFICATE_BASE64: ${{ secrets.IOS_APP_STORE_CERTIFICATE_BASE64 }}
+          IOS_APP_STORE_CERTIFICATE_PASSWORD: ${{ secrets.IOS_APP_STORE_CERTIFICATE_PASSWORD }}
+        run: |
+          echo $IOS_APP_STORE_CERTIFICATE_BASE64 | base64 --decode > /tmp/certificate.p12
+          keychain add-certificates --certificate /tmp/certificate.p12 --certificate-password $IOS_APP_STORE_CERTIFICATE_PASSWORD
+
+      - name: Set up Code signing settings on Xcode project
+        run: xcode-project use-profiles
+
+      - name: Build IPA for Distribution
+        run: |
+          # file='VERSION'
+          # fileData=`cat $file`
+          # IFS='.'
+          # read -a versionValue <<< "$fileData"
+          # buildNumber=$(( ${versionValue[0]} * 1000000 + ${versionValue[1]} * 10000 + ${{ github.run_number }} ))
+          # IFS=''
+          # buildName="${versionValue[0]}.${versionValue[1]}.${{ github.run_number }}"
+          # echo "Uploading build $buildName"
+          # flutter build ipa --release --build-number=$buildNumber --build-name=$buildName --export-options-plist=$HOME/export_options.plist
+          cat $HOME/export_options.plist
+          flutter build ipa -t lib/main_${{ env.FLAVOR }}.dart --flavor ${{ env.FLAVOR }} --export-options-plist=$HOME/export_options.plist
+
+      - name: Move build and rename for upload
+        run: |
+            upper_environment_name=$(echo "${{ env.FLAVOR }}" | tr '[:lower:]' '[:upper:]')
+            outputFileName="IOS-$upper_environment_name-${{ env.VERSION }}.ipa"
+            mv build/ios/ipa/resident_mobile.ipa build/ios/ipa/$outputFileName
+            ls -al build/ios/ipa
+            echo "OUTPUT_FILE_NAME=$outputFileName" >> $GITHUB_ENV
+
+      - name: Upload Artifacts to GitHub
+        if: ${{ env.UPLOAD_ARTIFACTS_TO_GITHUB == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: resident_mobile_${{ env.FLAVOR }}_release_${{ env.VERSION }}
+          path: |
+            build/ios/ipa/${{ env.OUTPUT_FILE_NAME }}
+
+      - name: Upload Artifacts to BrowserStack
+        if: ${{ env.UPLOAD_TO_BROWSER_STACK == 'true' }}
+        run: curl -u ${{ env.BROWSERSTACK_LOGIN }} -X POST "https://api-cloud.browserstack.com/app-live/upload" -F "file=@build/ios/ipa/${{ env.OUTPUT_FILE_NAME }}"
+
+      # Important! Cleanup: remove the certificate and provisioning profile from the runner!
+      # The Github runner should clean itself up but we will perform some of our own to be extra safe
+      - name: Clean up keychain and provisioning profile
+        if: ${{ always() }}
+        run: |
+          keychain delete
+          rm -r ~/Library/MobileDevice/Provisioning\ Profiles/

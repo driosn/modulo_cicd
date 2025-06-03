@@ -1,0 +1,828 @@
+{
+  "aDifferentAmountOption": "A different amount",
+  "aDifferentMobileNumber": "A different mobile number",
+  "aboutMakingPayments": "About Making Payments",
+  "aboutRoutingAccount": "Locate account information",
+  "accordionCloseAll": "Close All",
+  "accordionOpenAll": "Open All",
+  "accountInfoUpdated": "Account information updated",
+  "accountInformationUpdated": "Account information updated",
+  "accountNumber": "Account number",
+  "addAPaymentAccount": "Add a payment account",
+  "addCheckingSavingsAccount": "Add a checking or savings account.",
+  "addNewPaymentAccountSavesYou": "A saved checking or savings account allows you to pay your bills easily. Use it for AutoPay and for making single payments.",
+  "addressEmptyValidation": "Enter address",
+  "addressField": "Address",
+  "agreeTermsAuthorize": "I agree to the terms and authorize the monthly withdrawal of funds from my bank account.",
+  "agreeTermsAuthorizePayByText": "I agree to the terms for using Pay By Text.",
+  "allowUpForFortyEightHours": "Allow up to 48 hours for the total amount due to be updated in {appName} after you’ve made a payment.",
+  "@allowUpForFortyEightHours": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "allowUpTo48": "Allow up to 48 hours for the amount paid to be updated in {appName}.",
+  "@allowUpTo48": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "amount": "AMOUNT",
+  "amountDoesNotOnMyBill": "The amount due on my bill doesn’t match the amount in {appName}.",
+  "@amountDoesNotOnMyBill": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "amountDue": "Amount Due",
+  "amountDueMayVaryEachMonth": "(Amount due may vary each month)",
+  "amountOweAndAnyAdditional": "The amount you owe now and any additional unpaid amount.",
+  "amountOweFromCurrentBill": "The amount you owe from a current bill.",
+  "amountPaid": "AMOUNT PAID",
+  "announcementsCardNew": "New",
+  "announcementsCardTitle": "Announcements",
+  "announcementsCardViewAll": "VIEW ALL",
+  "announcementsDummyFrom": "From: Your Community Center",
+  "announcementsDummyWelcome": "Welcome to Fairfield Village! Blythe Mattie is your Community Manager. Contact him with questions. (123) 456-7890.",
+  "announcementsEmpty": "There are no announcements. Check back later.",
+  "atLeast1NumberField": "At least 1 number",
+  "atLeast1SymbolField": "At least 1 symbol ( ! @ # $ % ^ & * ( ) + = )",
+  "authDeclined": "Authorization Declined",
+  "authRequired": "Authorization Required",
+  "authorizationDescription": "I hereby authorize and request that you debit my bank account or charge my credit card, as selected above, for the amount specified above.",
+  "authorizeYourPaymentTitle": "Authorize Your Payment",
+  "autoPay": "AutoPay",
+  "autoPayEnabled": "AutoPay Enabled",
+  "autoPaySettings": "AutoPay Settings",
+  "autoPayStartDate": "AutoPay Start Date",
+  "autoPayStarted": "AutoPay Started ",
+  "automaticallyPayInfo": "Automatically pay when your bill is due",
+  "autopayEftDescription": "You are enrolled in Electronic Funds Transfer direct debit. These automatic payments already cover your rent every month. Before setting up AutoPay, contact your community to unenroll from EFT payments.",
+  "autopayNotEnabled": "AutoPay Not Enabled",
+  "autopayOff": "AutoPay OFF",
+  "autopayOn": "AutoPay ON",
+  "autopayOnDate": "AutoPay on",
+  "bankAccount": "Bank Account",
+  "bankAccountDebited": "Your bank account will be debited the full amount due.",
+  "beSureToPay": "Be sure to use another option to pay your balances due.",
+  "begins": "Begins",
+  "billDeliveryAddEmail": "Add a new email address",
+  "billDeliveryAddMail": "Add a new mailing address",
+  "billDeliveryAddPhone": "Add a new phone number",
+  "billDeliveryEmailOption": "Email",
+  "billDeliveryMailOption": "Mail",
+  "billDeliveryPhoneOption": "Text message",
+  "billDeliveryTab": "Bill Delivery",
+  "billDeliveryUpdateContactInformation": "Update your contact information",
+  "billingMonthLabel": "BILLING MONTH",
+  "billingSettingsTitle": "Billing Settings",
+  "billsAndPayment": "Billing & Payment History",
+  "billsLabel": "Bills",
+  "biometricLoginDisclaimer": "Would you like to save time and enable a secure login with {authenticationType}?",
+  "@biometricLoginDisclaimer": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Cancel",
+  "cancelAutoPay": "Cancel AutoPay",
+  "cancelAutoPayFor": "Cancel AutoPay for",
+  "cancelAutoPaySetup": "Cancel AutoPay Setup",
+  "cancelButton": "CANCEL",
+  "cancelPayByTextSetup": "Cancel Pay By Text Setup",
+  "cancelPayment": "CANCEL PAYMENT",
+  "cancelPaymentDialogContent": "Cancel and go back to the view the payments due.",
+  "cancelSetup": "CANCEL SETUP",
+  "cancellingTheSetupWillDelete": "Cancelling the setup will delete the information you entered, except for the payment account. We’ll save that to enable you to pay your balance due.",
+  "cashPay": "CashPay",
+  "cashPayDescription": "Enables you to pay your rent in cash in person at a participating CashPay locations.",
+  "cashPayNoAccount": "This site does not have a CashPay account.",
+  "cellPhoneField": "Cell phone",
+  "changeLanguage": "Change Language",
+  "changeLanguageQuestion": "Change Language?",
+  "changeMobileNumber": "Change mobile number",
+  "changePaymentAccount": "Update payment account",
+  "changePaymentDate": "Change Payment Date",
+  "changeTheAccount": "Change the account",
+  "changeTheAmount": "Change the amount",
+  "changeTheDate": "Change the date",
+  "changeTheMobilePhone": "Change the mobile phone",
+  "changeWithdrawal": "Change withdrawal amount",
+  "changesBillingSettingsSavedSuccessfully": "Billing settings updated",
+  "changesPreferredLanguageSavedSuccessfully": "Preferred language updated",
+  "changesSavedSuccessfully": "Changes saved successfully",
+  "charactersField": "8 to 64 characters",
+  "checkYourBill": "Check your bill",
+  "checking": "Checking",
+  "checkingAccount": "Checking Account",
+  "checkingAccountDeleted": "Checking Account Deleted",
+  "cityEmptyValidation": "Enter city",
+  "cityField": "City",
+  "close": "CLOSE",
+  "communityAcceptsPayments": "Your community accepts payments on the following days each month. The amount will be automatically debited from your account on that date.",
+  "communityAcceptsPaymentsOn": "Your community accepts payments on the {day} day each month. The amount will be automatically debited from your account on that date.",
+  "@communityAcceptsPaymentsOn": {
+    "placeholders": {
+      "day": {
+        "example": "third",
+        "type": "String"
+      }
+    }
+  },
+  "communityCardExplore": "EXPLORE YOUR COMMUNITY",
+  "communityCardTitle": "Fairfield Village",
+  "confirm": "Confirm",
+  "confirmAccountNumber": "Confirm account number",
+  "confirmNewPasswordField": "Confirm new password",
+  "confirmPasswordField": "Confirm Password",
+  "confirmUpdate": "Confirm update",
+  "confirmYourChanges": "Confirm your changes",
+  "contactInformationLabel": "Contact Information",
+  "continueT": "Continue",
+  "createAPasswordField": "Create a password for your account.",
+  "creditCardInfo": "Credit Card (3% fee applies)",
+  "current": "Current",
+  "currentDue": "Current due",
+  "currentPasswordField": "Current Password",
+  "dataChargesMayApply": "(Data charges may apply)",
+  "day": "day",
+  "dayOfMonth": "{day} day of the month",
+  "@dayOfMonth": {
+    "placeholders": {
+      "day": {
+        "example": "Fourth",
+        "type": "String"
+      }
+    }
+  },
+  "days": "days",
+  "daysBeforeDueDate": "Days before due date",
+  "debitAuthorization": "Debit Authorization",
+  "debitAuthorizationDescription": "I hereby authorize and request that you automatically debit my bank account on the date above selected on a monthly basis for the monthly AutoPay amount that I have selected above. I have previously provided my bank account information to you either through the “Manage Account” section of “My Account” on the website or the “Payment Account” section in the mobile application. If any authorized AutoPay amount is not available in my bank account, I will be charged late fees and/or dishonored check fees per my Lease or Rental Agreement, as well as any insufficient funds or overdraft fees that may be charged by my bank. I understand that it is my responsibility to update my bank account information as needed—whether through the website’s “Manage Account” section or the mobile app’s “Payment Account” area—and to assure that sufficient available funds are maintained to pay the foregoing AutoPay amount on the date of each monthly debit or charge. I further understand that if I close the designated bank account, I will designate another bank account or make timely arrangements for payments to be made in another manner. This AutoPay authorization will remain in effect until I change my AutoPay elections (but I understand that any AutoPay transaction already in process at the time of any change made by me may still be completed), or until you send me a 15-day notice of cancellation of the AutoPay service. I understand, acknowledge, and agree that by clicking this automatic payment authorization, I am providing my electronic signature (otherwise known as a “writing signed by me”) to authorize the automatic payments.",
+  "deleteAccount": "DELETE ACCOUNT",
+  "deletePaymentAccount": "Delete payment account",
+  "deletePaymentAccountInfo": "Your payment account will be deleted.",
+  "description": "DESCRIPTION",
+  "descriptionAutoPay": "AutoPay debits your bank account automatically when your payments are due. Each of your charges can have different AutoPay settings. It takes just a few minutes to set up.",
+  "descriptionPayByText": "Paying by text message is an alternative to AutoPay or in-app transactions for making payments. Each month when your bill is due, you'll receive a text message. Simply verify your information and make the payment.",
+  "doYouWantToCancelAutoPayDate": "Do you want to cancel the change to your AutoPay payment date?",
+  "doYouWantToCancelChangePaymentAccount": "Do you want to cancel the change to your payment account?",
+  "doesNotMatchAccountNumber": "Account numbers must match",
+  "doesNotMatchPassword": "Passwords must match",
+  "done": "Done",
+  "drawerAnnouncements": "Announcements",
+  "drawerCommunity": "Community",
+  "drawerCommunityMap": "Porpety Map",
+  "drawerCommunityThings": "Things to Know",
+  "drawerDashboard": "Summary",
+  "drawerEndUserLicenseAgreement": "End User License Agreement",
+  "drawerHelp": "Help",
+  "drawerMyAccount": "My Account",
+  "drawerMyAccountCommunication": "Communication Preferences",
+  "drawerMyAccountContact": "Contact Information",
+  "drawerMyAccountDelete": "Delete My Account",
+  "drawerMyAccountFeedback": "Give Feedback",
+  "drawerMyAccountLanguagePreference": "Language Preference",
+  "drawerMyAccountPrivacy": "Privacy Policy",
+  "drawerMyAccountRegister": "Add a Site",
+  "drawerMyAccountTerms": "Terms of Use",
+  "drawerMyAccountUser": "Log In Settings",
+  "drawerPayments": "Payments",
+  "drawerPaymentsAutopay": "AutoPay",
+  "drawerPaymentsBills": "Billing & Payment History",
+  "drawerPaymentsHistory": "Payment History",
+  "drawerPaymentsMake": "Make a Payment",
+  "drawerEverywareCashPay":"Pay With a Barcode",
+  "drawerPaymentsMethods": "Payment Account",
+  "drawerPaymentsPayByText": "Pay By Text",
+  "drawerPaymentsSettings": "Billing Settings",
+  "dueDate": "Due Date",
+  "dueDateReminder": "A due date reminder is a message that helps you remember to make payments.",
+  "dueDateReminderTab": "Due Date Reminder",
+  "dummyAugust2023": "August 2023",
+  "dummyDecember2023": "December 2023",
+  "dummyJuly2023": "July 2023",
+  "dummyNovember2023": "November 2023",
+  "dummyOctober2023": "October 2023",
+  "dummySeptember2023": "September 2023",
+  "editButton": "EDIT",
+  "editEmail": "Edit Email Address",
+  "editLabel": "Edit",
+  "editPaymentAccount": "Edit payment account",
+  "editUsername": "Edit Username",
+  "emailAddress": "Email Address",
+  "emailDeliveryOptionAlert": "Send bills to your email address?",
+  "emailEmptyValidation": "Enter email address",
+  "emailField": "Email",
+  "emailIncorrectFormatValidation": "Incorrect format",
+  "emailUpdated": "Email address has been updated",
+  "enableLoginWithBiometrics": "Enable {authenticationType} Login",
+  "@enableLoginWithBiometrics": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "enrollInAutoPay": "Enroll in AutoPay",
+  "enter": "Enter",
+  "enterAccountNumber": "Enter the account number",
+  "enterAmountError": "Enter amount",
+  "enterAmountLabel": "Enter amount",
+  "enterCodeBody": "A resident access code was emailed to\n{email}.\nEnter the code below.",
+  "@enterCodeBody": {
+    "placeholders": {
+      "email": {
+        "example": "jdoe@gmail.com",
+        "type": "String"
+      }
+    }
+  },
+  "enterCodeTitle": "Enter your access code",
+  "eftEnrolledNotification": "You are enrolled in Electronic funds Transfer direct debit. These Automatic payments already cover your rent every month. Before setting up Autopay, contact your community to unenroll in EFT payments",
+  "enterFiveDigits": "Enter 5 digits",
+  "enterMobileNumber": "Enter mobile number",
+  "enterNineDigits": "Enter 9 digits",
+  "enterThreeDigits": "Enter 3 digits",
+  "enterYourNewAutoPaymentAccount": "Enter your new AutoPayment account information. The new account will replace your current one.",
+  "enterYourNewAutoPaymentDate": "Enter your new payment date. The new date will replace your current one.",
+  "estimatedFeeInfo": "Estimated fee: ",
+  "expenseToBePaid": "Charge to be paid",
+  "explainerButton": "OK, GOT IT!",
+  "explainerText": "{appName} enables you to conveniently pay bills and do other tasks in your community any time.\n\n{appName} operates independently from your community office.\n\nPlease contact your community manager for critical issues.",
+  "@explainerText": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "eula": "EULA",
+  "faqCategories": "FAQ Categories",
+  "fieldRequired": "{field} is required",
+  "@fieldRequired": {
+    "placeholders": {
+      "field": {
+        "example": "Name on account",
+        "type": "String"
+      }
+    }
+  },
+  "fifth": "Fifth",
+  "findALocation": "Find a location",
+  "first": "First",
+  "fixedAmount": "Fixed Amount of {amount}",
+  "@fixedAmount": {
+    "placeholders": {
+      "amount": {
+        "example": "$1.700",
+        "type": "String"
+      }
+    }
+  },
+  "forgotUsernamePasswordLabel": "Forgot username or password?",
+  "forgotUsernamePasswordTitle": "Forgot Username or Password?",
+  "fourth": "Fourth",
+  "frequentlyAskedQuestions": "Frequently Asked Questions",
+  "fullAmount": "Full amount",
+  "fullAmountNotExceed": "Full amount not to exceed {maxAmount}",
+  "@fullAmountNotExceed": {
+    "placeholders": {
+      "maxAmount": {
+        "example": "$1.700",
+        "type": "String"
+      }
+    }
+  },
+  "fullTermsOfAgreement": "Full terms of agreement",
+  "gettingYourPaymentReady": "Getting your payment ready....",
+  "goBack": "GO BACK",
+  "goToWebsiteButton": "GO TO WEBSITE",
+  "hintPasswordLabel": "Enter 8 to 64 characters",
+  "hintTextInputField": "I speak english!",
+  "homeLoan": "Home Loan",
+  "homePhoneField": "Home phone",
+  "howLoginWithBiometrics": "How do I set up {authenticationType}?",
+  "@howLoginWithBiometrics": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "iJustPaidIStillHaveBalance": "I just paid but I still have a balance in {appName}. Why?",
+  "@iJustPaidIStillHaveBalance": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "inProgress": "In Progress",
+  "informativeMessageContactInformation": "This email address is where you are notified about changes to your username and password and where payment receipts are sent. To change the email address where you receive bills, go to Payments > Billing Settings.",
+  "institutionMustBeThree": "Institution number must be 3 digits",
+  "institutionNumber": "Institution number",
+  "invalidLogInInformation": "Invalid Log In Information",
+  "invalidNumber": "Invalid number",
+  "languageField": "Language",
+  "languagePreferenceDescription": "Your selection will apply to text in the mobile app, email related to your account, and Pay by Text.",
+  "languageSelectedField": "Selected language:",
+  "leaseOption": "Lease Option",
+  "legalDocuments": "Legal Documents",
+  "letsRiviewYourAutoPay": "Review your setup. If everything looks okay, start AutoPay below.",
+  "letsRiviewYourPayByText": "Let’s review your setup. If everything looks ok, go ahead and activate it.",
+  "logInButton": "LOG IN",
+  "logOut": "Log Out",
+  "logOutDialog": "Your preferences and settings will be saved.",
+  "loginWithBiometrics": "Log In With {authenticationType}",
+  "@loginWithBiometrics": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "mailDeliveryOptionAlert": "Send bills to your mailing address?",
+  "mailingAddressField": "Mailing address",
+  "mailingAddressOption": "Mailing address",
+  "makeAPayment": "Make a Payment",
+  "makeAPaymentEftDescription": "You are enrolled in Electronic Funds Transfer direct debit. These automatic payments already cover your rent and charges every month. You may make an additional payment. To unenroll from EFT payments, contact your community.",
+  "makePayment": "Make Payment",
+  "manageYourHomeField": "Manage your home any time of day",
+  "mobilePhone": "Mobile phone",
+  "mobilePhoneNumber": "Mobile Phone Number",
+  "mobileWalletInfo": "Mobile Wallet (3% fee applies)",
+  "monthlyWithdrawal": "Monthly Withdrawal",
+  "nDay": "{number, select, 1{day} other{days}}",
+  "@nDay": {
+    "description": "return day in singular or plural",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "nMonth": "{number, select, 1{January} 2{February} 3{March} 4{April} 5{May} 6{June} 7{July} 8{August} 9{September} 10{October} 11{November} 12{December} other{Error}}",
+  "@nMonth": {
+    "description": "return month from number",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "nameOnAccount": "Name on account",
+  "needHelpButton": "Need help?",
+  "needHelpField": "Need help?",
+  "needHelpRegisteringButton": "Need help registering?",
+  "newPasswordField": "New password",
+  "newPaymentAccount": "New Payment Account",
+  "newPaymentAccountAdded": "New payment account added",
+  "newPaymentAccountSaved": "New payment account saved",
+  "newPaymentDateSaved": "New payment date saved",
+  "nextButton": "NEXT",
+  "nextField": "Next",
+  "noBills": "There are no bills available yet.",
+  "noCancelUpperCase": "NO, CANCEL",
+  "noPaymentDue": "No Payment Due",
+  "noPaymentDueDescription": "There is no payment due, but you may pay toward a future balance.",
+  "noPaymentReminderWillBeSent": "No payment reminder will be sent",
+  "noPayments": "No payments have been made yet.",
+  "occasionallyAmountDue": "Occasionally the amount due in the {appName} app doesn’t match the total amount due on your bill. Please contact your community manager for assistance with payment if this occurs.",
+  "@occasionallyAmountDue": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "off": "OFF",
+  "ok": "Ok",
+  "on": "ON",
+  "onStopPay": "Your option to make payments through {appName} has been paused. Please pay your bills in person at the community office.",
+  "@onStopPay": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "oneTimePaymentAuthorizationDescription": "I hereby authorize and request that you debit my bank account or charge my credit card, as selected above, for the amount specified above. If I have elected to debit my bank account, I have previously provided my bank account information either through the “Manage Account” section of “My Account” on the website or the “Payment Account” section in the mobile application and authorize the use of this account. If the authorized amount is not available in my bank account or pursuant to my credit card account, I understand and agree that I will be charged late fees and/or dishonored check fees per my Lease or Rental Agreement, as well as any insufficient funds or overdraft fees that may be charged by my bank or credit card company. I understand that it is my responsibility to update my bank or credit card information as needed—whether through the website’s “Manage Account” section or the mobile app’s “Payment Account” area—and to assure that sufficient available funds or credit availability is maintained to pay the foregoing amount. I understand, acknowledge, and agree that by clicking this one-time payment authorization, I am providing my electronic signature (otherwise known as a “writing signed by me”) to authorize the one-time payment.",
+  "orField": "Or",
+  "paid": "Paid",
+  "passwordEmptyValidation": "Enter a password",
+  "passwordField": "Password",
+  "passwordMatchField": "Password and confirm password match",
+  "passwordMissingNumber": "Missing a number",
+  "passwordMissingSymbol": "Missing a symbol",
+  "passwordRequiredField": "Password is required",
+  "passwordTooLongValidation": "Too long",
+  "passwordTooShortValidation": "Too short",
+  "passwordUpdated": "Passswood has been updated",
+  "payByText": "Pay By Text",
+  "payByTextAuthorization": "Pay By Text Authorization",
+  "payByTextOff": "Pay By Text OFF",
+  "payByTextOn": "Pay By Text ON",
+  "payByTextSettings": "Pay By Text Settings",
+  "payByTextStarted": "Pay By Text Started ",
+  "payHalfFlex": "Pay half now, half later with flex",
+  "payNow": "PAY NOW",
+  "payNowWith": "Pay now with your bank account,\ncredit card or mobile wallet",
+  "payNowWithThisAcc": "Pay now with this account",
+  "payment": "Payment",
+  "paymentAccount": "Payment Account",
+  "paymentAccountAdded": "Payment Account Added",
+  "paymentAccountDeleted": "Payment Account Deleted",
+  "paymentAccountSetUp": "Payment Account Setup",
+  "paymentAccountWillBeDebitted": "Your payment account will be debited to pay your {billName}. To make changes, tap edit.",
+  "@paymentAccountWillBeDebitted": {
+    "placeholders": {
+      "billName": {
+        "example": "Rent",
+        "type": "String"
+      }
+    }
+  },
+  "paymentAccounts": "Payment Accounts",
+  "paymentAgreement": "Payment Agreement",
+  "paymentAmount": "Payment",
+  "paymentCardGoToPayments": "GO TO PAYMENTS",
+  "paymentCardLastPayment": "LAST PAYMENT",
+  "paymentCardNoPrior": "No prior payment",
+  "paymentCardOnTime": "On time",
+  "paymentCardRentBalance": "RENT BALANCE",
+  "paymentCardTitle": "Payments",
+  "paymentDate": "Payment Date",
+  "paymentDue": "Payment Due",
+  "paymentDueDescription": "You must pay the Total Rent due with CashPay.",
+  "paymentErrorAmountLowerThanMinimumTitle": "Amount Lower Than Minimum",
+  "paymentErrorAmountLowerThanMinimumMessage": "A minimum payment of {amount} is required.",
+  "@paymentErrorAmountLowerThanMinimumMessage": {
+    "placeholders": {
+      "amount": {
+        "example": "$1.00",
+        "type": "String"
+      }
+    }
+  },
+  "paymentErrorGeneralTitle": "An Error Occurred",
+  "paymentErrorGeneralMessage": "We were unable to make a payment on your account.<br/>Please contact your community manager.",
+  "paymentErrorAmountExceedsMaximumTitle": "Invalid Payment Amount",
+  "paymentErrorAmountExceedsMaximumMessage": "The maximum amount allowed is {amount}",
+  "@paymentErrorAmountExceedsMaximumMessage": {
+    "placeholders": {
+      "amount": {
+        "example": "$1.00",
+        "type": "String"
+      }
+    }
+  },
+  "paymentErrorPreviousPaymentTitle": "Confirm Additional Payment",
+  "paymentErrorPreviousPaymentButton": "Authorize Additional Payment",
+  "paymentErrorPreviousPaymentMessage": "A payment of {amount} was made on {date}. If you still wish to submit this payment, please select the authorization and click Submit. To cancel this additional payment select cancel.",
+  "@paymentErrorPreviousPaymentMessage": {
+    "placeholders": {
+      "amount": {
+        "example": "$1.00",
+        "type": "String"
+      },
+      "date": {
+        "example": "01/01/2024",
+        "type": "String"
+      }
+    }
+  },
+  "paymentMethod": "PAYMENT METHOD",
+  "paymentMethodPascalCase": "Payment Method",
+  "paymentSummary": "Payment Summary",
+  "paymentsDueTitle": "Payments Due",
+  "paymentsLabel": "Payments",
+  "phoneDeliveryOptionAlert": "Send bills by text message to your mobile phone?",
+  "phoneEmptyValidation": "Incomplete phone number",
+  "phoneIncompleteValidation": "Incomplete phone number",
+  "phoneIncorrectLength": "Enter 10 numbers",
+  "phoneNumberField": "Phone number",
+  "phoneNumberHint": "Area code + number",
+  "phoneNumberOrPasswordField": "Mobile number or email",
+  "posCodeCity": "POS Code City",
+  "posName": "POS Name",
+  "postalCodeEmptyValidation": "Enter postal code",
+  "postalCodeField": "Postal code",
+  "postalCodeIncompleteValidation": "Enter 5 numbers",
+  "preferredLanguage": "Preferred Language",
+  "provideReasonAuthDeclined": "Please provide the reason you have declined authorization of AutoPay payments to help us better serve you.",
+  "provideReasonAuthDeclinedPayByText": "Please provide the reason you have declined authorization of Pay By Text payments to help us better serve you.",
+  "readyStartMakingPayment": "You’re ready to start making Automatic payments with AutoPay. You can stop AutoPay any time.",
+  "register": "Register",
+  "registerBody": "We’ll send you an access code that connects you to your community.",
+  "registerButton": "ADD SITE",
+  "registerSiteDescription": "{appName} enables you to manage more than one site with your user account. If you have more than one site, register each here with the site registration code. If you do not have the site registration code, contact your community manager.",
+  "@re": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "registerTitle": "Enter your email address",
+  "remindersOff": "Reminders OFF",
+  "remindersOn": "Reminders ON",
+  "removeSelectedLanguageField": "Remove selected language",
+  "rent": "Rent",
+  "rentToOwn": "Rent to Own",
+  "resendAccessCodeButton": "RESEND MY ACCESS CODE",
+  "residentPortalNotAvailable": "{appName} mobile app is not currently available for your community. You can continue to use the web version.",
+  "@residentPortalNotAvailable": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "reviewAutoPaySetUp": "Review AutoPay Set Up",
+  "routingAccountInfo": "Bank Account Information",
+  "routingMustBeNine": "Routing number must be 9 digits",
+  "routingNumber": "Routing number",
+  "sameAsSiteAddressLabel": "Same as site address",
+  "saveAccount": "Save Account",
+  "saveButton": "SAVE",
+  "saveChanges": "Save Changes",
+  "savings": "Savings",
+  "savingsAccount": "Savings Account",
+  "search": "Search",
+  "second": "Second",
+  "secureAuthenticationDisabled": "Login with {authenticationType} has been disabled",
+  "@secureAuthenticationDisabled": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "secureAuthenticationEnabled": "Login with {authenticationType} has been enabled",
+  "@secureAuthenticationEnabled": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "secureAuthenticationField": "SECURE AUTHENTICATION",
+  "secureAuthentication": "Secure Authentication",
+  "secureAuthenticationInfo": "{authenticationType} allows you to log in securely without entering your username and password.",
+  "@secureAuthenticationInfo": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "selectExpense": "Select charge",
+  "selectPaymentDate": "Select a Payment Date",
+  "selectYourPreferredLanguage": "Select your preferred language",
+  "selectedPaymentDate": "{paymentDay} day of the month",
+  "@selectedPaymentDate": {
+    "placeholders": {
+      "paymentDay": {
+        "example": "First",
+        "type": "String"
+      }
+    }
+  },
+  "sendAnEmailReminder": "Send an email reminder before the due date.",
+  "sendBillsBy": "Send bills by:",
+  "sendBillsToYour": "Send bills to your",
+  "sessionExpiredPrompt": "Your session has expired. Please log in.",
+  "setPreferencesForMailText": "Set preferences for the mail you receive in Communication Preferences.",
+  "setUpPaymentAccount": "Add a Payment Account",
+  "settings": "Settings",
+  "setupAutoPay": "Set Up AutoPay",
+  "setupAutoPayFor": "SET UP AUTOPAY FOR",
+  "setupBillingPreferences": "Set Up Billing Preferences",
+  "setupPayByText": "Set Up Pay By Text",
+  "seventh": "Seventh",
+  "showPaymentDueTile": "Show payment due",
+  "sigInButton": "SIGN IN",
+  "sigInFacebook": "Sign in with Facebook",
+  "sigInGoogle": "Sign in with Google",
+  "signOutButton": "LOG OUT",
+  "signOutPrompt": "You have successfully logged out",
+  "site": "Site",
+  "siteAddress": "Site Address",
+  "siteAddressHint": "Site Address",
+  "siteBalance": "Site balance",
+  "siteBalanceLabel": "Site Balance",
+  "siteBalancePascalCase": "Rent",
+  "siteBalanceSubtitle": "(Total amount due may vary)",
+  "sitePaymentAccount": "Site Payment Account",
+  "siteRegistrationCodeHint": "Enter the code",
+  "siteRegistrationCodeLabel": "Site Code",
+  "sixth": "Sixth",
+  "skip": "Skip",
+  "skipSetUpForNow": "SKIP SETUP FOR NOW",
+  "socialLoginButton": "Sign in with {socialNetwork}",
+  "@socialLoginButton": {
+    "placeholders": {
+      "socialNetwork": {
+        "example": "Instagram",
+        "type": "String"
+      }
+    }
+  },
+  "startAutoPay": "Start AutoPay",
+  "startPayByText": "Start Pay By Text",
+  "stateEmptyValidation": "Select a state",
+  "stateField": "State",
+  "statesTitle": "STATES",
+  "stoppingAutoPayOccurs": "Payments will no longer be automatically withdrawn from your account.",
+  "subjectRentCharges": "Subject,{rentValue} Rent + Charges",
+  "@subjectRentCharges": {
+    "placeholders": {
+      "rentValue": {
+        "example": "$500.00",
+        "type": "String"
+      }
+    }
+  },
+  "thankYou": "Thank You",
+  "thankYouPayment": "Thank you for your payment",
+  "theAmountMayVary": "(The amount may vary each month)",
+  "theLanguageChangeWillTakeEffect": "The language change will take effect immediately in the app as well as for any future notifications.",
+  "third": "Third",
+  "thisNumberWillNoReplace": "This number will not replace the mobile contact number in your account settings.",
+  "total": "Total",
+  "totalBalance": "Total Balance",
+  "transactionN": "TRANSACTION #",
+  "transitMustBeFive": "Transit number must be 5 digits",
+  "transitNumber": "Transit number",
+  "typeNameExactly": "Type the name exactly as it appears",
+  "typeOfAccount": "Type of account",
+  "updateAccount": "Update Account",
+  "updateAPasswordField": "{appName} password requirements",
+  "@updateAPasswordField": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "updateAutoPayDates": "Change recurring payment date",
+  "updateCheckingSavingsAccount": "Enter your new account information. The new account will replace your current one.",
+  "updateMailingAddress": "Update mailing address",
+  "updatePassword": "Update Password",
+  "useSiteAddressLabel": "Use site address",
+  "username": "Username",
+  "usernameEmptyValidation": "Enter your username",
+  "usernameUpdated": "Username has been updated",
+  "version": "Version",
+  "welcomeField": "Welcome",
+  "welcomeText": "Let’s get started!",
+  "welcomeTextBold": "brand new experience!",
+  "westernUnionAccount": "Western Union Account",
+  "westernUnionFee": "$3.20 fee per transaction",
+  "whatIsCurrentBalance": "What is the Current Balance?",
+  "whatIsTotalBalance": "What is the Total Balance?",
+  "whatLanguageField": "What language do you prefer?",
+  "whatNumberShouldWeSend": "What number should we send bill reminders and Pay By Text messages to?",
+  "withdrawalAmountLabel": "Withdrawal Amount",
+  "withdrawalCancelSetupButton": "CANCEL SETUP",
+  "withdrawalDoNotExceedLabel": "Do not exceed:",
+  "withdrawalExactlyLabel": "Fixed Amount:",
+  "withdrawalFixedAmountFirstPart": "If the fixed amount is less than the total amount due, it will not be withdrawn. When this occurs, you will receive an email notifying you before the due date. Make a payment for the amount due by the due date in the {appName} app or by another method provided by your community.",
+  "@withdrawalFixedAmountFirstPart": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "withdrawalFixedAmountOption": "A fixed amount",
+  "withdrawalFixedAmountReview": "Fixed amount of",
+  "withdrawalFixedAmountSecondPart": "The fixed amount will be withdrawn even when you have no balance due or have a credit balance.",
+  "withdrawalFullAmountOption": "The full amount due",
+  "withdrawalFullAmountDueReview": "Full amount due",
+  "withdrawalFullAmountReview": "Full amount not to exceed",
+  "withdrawalFullAmountWithConditionOption": "The full amount due, but only if it doesn’t exceed a certain amount",
+  "withdrawalFullAmountWithConditionReview": "Full amount due",
+  "withdrawalMountQuestionLabel": "How much do you want to withdraw each month with AutoPay? The total due may vary each month, depending on your charges.",
+  "withdrawalNextButton": "NEXT",
+  "yesCancel": "YES, CANCEL",
+  "yesUpperCase": "YES",
+  "youAreEnrolledInEft": "You're Enrolled in EFT",
+  "youHaveNotAgreedTerms": "You have not agreed to authorize debits to your payment account. Authorization is required to make payments with AutoPay.",
+  "youHaveNotAgreedTermsPayByText": "You have not agreed to authorize debits to your payment account. Authorization is required to make payments with Pay By Text.",
+  "youMustSelectAPaymentMethod": "You must select a payment method",
+  "youMustAuthorizeYourPayment": "You must authorize your payment",
+  "youWillReceiveABill": "You will receive a bill by [method] outlining charges before the due date.",
+  "youWillReceiveAPayment": "You will receive a payment receipt by email after the payment has been made.",
+  "youWillReceiveAReminder": "{nDays, select, 1{You will receive a reminder {nDays} day before the due date} other{You will receive a reminder {nDays} days before the due date}}",
+  "@youWillReceiveAReminder": {
+    "placeholders": {
+      "nDays": {
+        "example": "1",
+        "type": "String"
+      }
+    }
+  },
+  "youWillTransferredPortal": "You will be transferred to the {appName} website to recover your account information.",
+  "@youWillTransferredPortal": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "yourBalanceAutomatically": "Your balance will be automatically paid.",
+  "yourPaymentDate": "Your Payment Date",
+  "yourRemindersGo": "Send payment reminders to your",
+  "yourSelectionWillApply": "Your selection will apply to text in the mobile app, email related to your account, and Pay by Text.",
+  "zegoFee": "$4.00 fee per transaction",
+  "zegoPayLeaseCard": "Zego PayLease Card",
+  "totalDue": "Total Due",
+  "creditCard": "Credit Card",
+  "creditCardOrMobileWallet": "Credit Card or Mobile Wallet",
+  "amountNotGreaterThanOne":  "Amount entered must be greater than $1.00",
+  "pleaseAuthorizeYourPayment": "Please authorize your payment",
+  "yourTotalAmountWillBe": "Your total amount will be:",
+  "addACheckingOrSavingsAccount": "Add a checking or savings account",
+  "totalPaymentAmountIncludes": "The total payment amount includes a processing fee.",
+  "required": "Required",
+  "currentRent": "Current Rent",
+  "currentBalance": "Current Balance",
+  "currentDuePascal": "Current Due",
+  "totalDuePascal": "Total Due",
+  "homeLoanDue": "Home Loan Due",
+  "rentToOwnLoanDue": "Rent To Own Loan Due",
+  "leaseOptionLoanDue": "Lease Option Loan Due",
+  "paymentsSuspendedDescription": "Your option to make payments for this site in the application has been suspended by your community.\nPlease contact them for more information.",
+  "byUsingTheAppYouAgreeToThe": "By using the app, you agree to the",
+  "and": "and",
+  "termsOfUse": "Terms of Use",
+  "privacyPolicy": "Privacy Policy",
+  "iAccept": "I accept",
+  "iDecline": "I decline",
+  "declineTermsOfUseAndPrivacyPolicy": "Decline Terms of Use and Privacy Policy",
+  "acceptDocumentsIsRequired": "Accepting the Privacy Policy and Terms of Use is required. If you decline, you may accept the agreements later.",
+  "goBackAndAccept": "GO BACK AND ACCEPT",
+  "needHelpLoggingIn": "Need help logging in?",
+  "logInHelp": "Log In Help",
+   "overpaymentTitle": "Overpayment",
+  "overpaymentContent":"You are making a payment amount that is greater than the loan balance due. By continuing, you agree that the excess amount will be applied as a prepayment to your total balance. To apply the payment directly to your principal balance, please contact your community office.",
+   "makeoverpayment" : "MAKE OVERPAYMENT",
+  "loginSuccessful": "Login successful",
+  "faceIdLogInEnabled": "Face ID log in is enabled",
+  "touchIdLogInEnabled": "Touch ID log in is enabled",
+  "deleteMyAccount": "Delete My Account",
+  "accountNotDeleted":"Account Not Deleted",
+  "accountNotDeletedSuccessfully": "An error occurred and your account was not deleted. Please try again.",
+  "deleteAccountWarning": "Deleting your account signs you out of the  app and removes all settings, preferences, payment method and application data previously entered.\n\nIf you haven’t moved out of your home, be sure to pay your rent and charges directly to your community after your account has been deleted.",
+  "signOutInstead": "sign out instead",
+  "warrningTextDelete": "Your account, settings, preferences, payment method and application data will be deleted.",
+  "accountDeleted": "Account Deleted",
+  "accountDeletedSuccessfully": "Your account, settings, preferences, payment method and application data have been deleted.",
+  "participatingRetailers": "Participating Retailers",
+  "paymentsUpToMaxAmountAccepted": "Payments up to ${maximumPaymentAmount} accepted",
+  "@paymentsUpToMaxAmountAccepted": {
+      "placeholders": {
+        "maximumPaymentAmount": {
+          "example": "$1499",
+          "type": "String"
+        }
+      }
+    },
+  "sevenEleven": "7-Eleven",
+  "paymentsUpTo999Accepted": "Payments up to $999 accepted",
+  "cvsPharmacy": "CVS Pharmacy",
+  "kroger": "Kroger",
+  "gomart": "Gomart",
+  "saveMart": "Save Mart",
+  "kwikTrip": "Kwik Trip",
+  "walgreensDuaneReed": "Walgreens / Duane Reed"
+}

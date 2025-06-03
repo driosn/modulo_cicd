@@ -1,0 +1,168 @@
+name: "Android Build QA"
+on:
+    # push:
+    #   branches: [ ]
+
+    workflow_dispatch:
+        inputs:
+            # USE_PUBSPEC:
+            #   description: 'Use the version from the pubspec.yaml file. If false, it will use the BUILD_NAME and BUILD_NUMBER'
+            #   required: true
+            #   default: true
+            #   type: boolean
+            # BUILD_NAME:
+            #   description: 'The build name. i.e. 0.0.4'
+            #   required: false
+            #   default: '0.0.0'
+            #   type: string
+            # BUILD_NUMBER:
+            #   description: 'The build number. i.e. 109'
+            #   required: false
+            #   default: '0'
+            #   type: string
+            UPLOAD_TO_BROWSER_STACK:
+              description: 'Whether or not to upload to BrowserStack'
+              required: false
+              default: true
+              type: boolean
+            UPLOAD_ARTIFACTS_TO_GITHUB:
+              description: 'Whether or not to upload to GitHub for manual download'
+              required: false
+              default: true
+              type: boolean
+            # UPLOAD_TO_GOOGLE_PLAY:
+            #   description: 'Whether or not to upload to Google Play'
+            #   required: false
+            #   default: false
+            #   type: boolean
+            # ENVIRONMENT:
+            #   description: 'The environment to build for'
+            #   required: false
+            #   default: 'qa'
+            #   type: choice
+            #   options:
+            #     - qa
+            #     - production
+env:
+  # Setting an environment variable with the value of a configuration variable
+#   BUILD_NAME: ${{ github.event.inputs.BUILD_NAME }}
+#   BUILD_NUMBER: ${{ github.event.inputs.BUILD_NUMBER}}
+#   USE_PUBSPEC: ${{ github.event.inputs.USE_PUBSPEC || true }} # default to true if we trigger the workflow from a push/pull request
+  USE_PUBSPEC: true
+  UPLOAD_TO_BROWSER_STACK: ${{ github.event.inputs.UPLOAD_TO_BROWSER_STACK || false }} # default to false if we trigger the workflow from a push/pull request
+  UPLOAD_ARTIFACTS_TO_GITHUB: ${{ github.event.inputs.UPLOAD_ARTIFACTS_TO_GITHUB || false }} # default to false if we trigger the workflow from a push/pull request
+  BROWSERSTACK_LOGIN: ${{ secrets.BROWSERSTACK_LOGIN }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: qa
+    steps:
+      - name: Display build environment variables
+        id: displayBuildEnv
+        run: |
+          echo "env.USE_PUBSPEC: ${{ env.USE_PUBSPEC }}"
+          # echo "env.BUILD_NAME: ${{ env.BUILD_NAME }}"
+          # echo "env.BUILD_NUMBER: ${{ env.BUILD_NUMBER }}"
+          echo "env.UPLOAD_TO_BROWSER_STACK: ${{ env.UPLOAD_TO_BROWSER_STACK }}"
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: "17.x"
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: "3.24.3"
+          channel: 'stable'
+
+      - name: Switch version based on pubspec flag
+        run: |
+          if [[ ${{ env.USE_PUBSPEC }} == 'true' ]]; then
+              echo "Getting version from pubspec"
+              version=$(grep '^version: ' pubspec.yaml | cut -d ' ' -f 2 | tr -d '\r')
+          else
+              echo "Getting version from build vars"
+              version=${{env.BUILD_NAME}}+${{env.BUILD_NUMBER}}
+          fi
+          echo "VERSION=$version" >> $GITHUB_ENV
+
+      - name: Echo environment version
+        run: |
+            echo "Env version: ${{ env.VERSION }}"
+
+      - name: Decode Keystore
+        env:
+          ANDROID_UPLOAD_KEYSTORE_BASE64: '${{ secrets.ANDROID_UPLOAD_KEYSTORE_BASE64 }}'
+        run: |
+          echo $ANDROID_UPLOAD_KEYSTORE_BASE64 | base64 --decode > android/app/keystore.jks
+
+      - name: Create key.properties
+        run: |
+          echo "storePassword=${{ secrets.ANDROID_UPLOAD_KEYSTORE_PASSWORD }}" > android/key.properties
+          echo "keyPassword=${{ secrets.ANDROID_UPLOAD_KEY_PASSWORD }}" >> android/key.properties
+          echo "keyAlias=${{ secrets.ANDROID_UPLOAD_KEY_ALIAS }}" >> android/key.properties
+          echo "storeFile=keystore.jks" >> android/key.properties
+
+      - name: Decode And Store Google Services Config
+        env:
+          ANDROID_GOOGLE_SERVICES_CONFIG_BASE64: '${{ secrets.ANDROID_GOOGLE_SERVICES_CONFIG_BASE64 }}'
+        run: |
+          android_qa_path=android/app/src/qa
+          mkdir -p $android_qa_path
+          echo $ANDROID_GOOGLE_SERVICES_CONFIG_BASE64 | base64 --decode > $android_qa_path/google-services.json
+
+      - name: Decode And Store Flutter Firebase Options
+        env:
+          FLUTTER_FIREBASE_OPTIONS_BASE64: '${{ secrets.FLUTTER_FIREBASE_OPTIONS_BASE64 }}'
+        run: |
+          echo $FLUTTER_FIREBASE_OPTIONS_BASE64 | base64 --decode > lib/firebase_options_qa.dart
+
+      - run: flutter pub get
+
+      - name: Run Tests
+        run: flutter test
+
+      - name: Build appBundle
+        run: |
+          if [[ ${{ env.USE_PUBSPEC }} == 'true' ]]; then
+              echo "Building with pubspec version"
+              flutter build appbundle -t lib/main_qa.dart --flavor qa
+          else
+              echo "Building with build name and number overriden"
+              flutter build appbundle -t lib/main_qa.dart --flavor qa --build-name=${{ env.BUILD_NAME }} --build-number=${{ env.BUILD_NUMBER }}
+          fi
+
+      - name: Move build and rename for upload
+        run: |
+            mv build/app/outputs/bundle/qaRelease/app-qa-release.aab build/app/outputs/bundle/qaRelease/ANDROID-QA-${{ env.VERSION }}.aab
+            ls -al build/app/outputs/bundle/qaRelease
+
+      - name: Upload Artifacts to GitHub
+        if: ${{ env.UPLOAD_ARTIFACTS_TO_GITHUB == 'true' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: resident_mobile_qa_release_${{ env.VERSION }}
+          path: |
+            build/app/outputs/bundle/qaRelease/ANDROID-QA-${{ env.VERSION }}.aab
+
+      - name: Upload Artifacts to BrowserStack
+        if: ${{ env.UPLOAD_TO_BROWSER_STACK == 'true' }}
+        run: curl -u ${{ env.BROWSERSTACK_LOGIN }} -X POST "https://api-cloud.browserstack.com/app-live/upload" -F "file=@build/app/outputs/bundle/qaRelease/ANDROID-QA-${{ env.VERSION }}.aab"
+
+
+
+
+
+    #   - name: A test to see how we can check the github ref. Not using now just a test output
+    #     run: |
+    #       echo "github.ref: ${{ github.ref }}"
+    #       ref='refs/tags/v'
+    #       if [[ ${{ github.ref }} == *${ref}* ]]; then
+    #           v=$(echo ${{ github.ref }} | cut -d'/' -f3)
+    #           echo "version tag is ${v}"
+    #       else
+    #           echo "There is no github tag reference, skipping"
+    #       fi

@@ -1,0 +1,10 @@
+{
+    "id": "0b25c28a-d10b-4ea1-8fa4-41114cb38b50",
+    "propertyId": "bd1e92cc-ef50-45b0-b056-3ce882074653",
+    "paymentProcessorTypeDescription": "IntelliPay",
+    "paymentProcessorType": 4,
+    "paymentMethodTypeDescription": "Credit Card",
+    "paymentMethodType": 2,
+    "payToTypeDescription": "Rent",
+    "payToType": 1
+}

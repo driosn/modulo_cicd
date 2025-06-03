@@ -1,0 +1,79 @@
+{
+    "group": "Log In and Authentication",
+    "section": "Log In",
+    "question": "What is biometric authentication?",
+    "answer": [
+      {
+        "type": "title",
+        "value": "What is biometric authentication?"
+      },
+      {
+        "type": "spacing-sm"
+      },
+      {
+        "type": "text",
+        "value": "Biometric authentication verifies your identity at using your unique physical characteristics, like your fingerprint or face and enables you to log in to Resident Portal without typing in a password.  Android phones have Fingerprint ID or Face ID to enable log in and iPhones have either Face ID or Touch ID."
+      },
+      {
+        "type": "spacing-md"
+      },
+      {
+        "type": "subtitle",
+        "value": "Setting Up Biometric Authentication"
+      },
+      {
+        "type": "spacing-md"
+      },
+      {
+        "type": "orderedList",
+        "values": [
+          {
+            "type": "text",
+            "value": "Check that your mobile phone has the necessary hardware and that biometrics are enabled in your phone's settings."
+          },
+          {
+            "type": "text",
+            "value": "If your biometric data hasn't been saved to your phone yet, follow the prompts to scan and register your face."
+          },
+          {
+            "type": "text",
+            "value": "Enable Biometric Log In in the Resident Portal app"
+          },
+          {
+            "type": "unorderedList",
+            "values": [
+              {
+                "type": "text",
+                "value": "Go to the \"My Account\" menu."
+              },
+              {
+                "type": "text",
+                "value": "Select \"Log In Settings\""
+              },
+              {
+                "type": "text",
+                "value": "Tap on \"Secure Authentication\" and follow the on-screen instructions to set it up."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "spacing-sm"
+      },
+      {
+        "type": "subtitle",
+        "value": "Using Biometric Authentication"
+      },
+      {
+        "type": "spacing-sm"
+      },
+      {
+        "type": "text",
+        "value": "Once set up, you can use biometric authentication to unlock the Resident Portal App. Simply use your registered biometric (fingerprint or face) to unlock the app instead of entering a password."
+      },
+      {
+        "type": "spacing-md"
+      }
+    ]
+  }

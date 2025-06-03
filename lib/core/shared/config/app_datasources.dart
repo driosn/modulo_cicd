@@ -1,0 +1,4 @@
+enum AppDataSources {
+  residentPortalMobileAPI,
+  firebaseRemoteConfig,
+}

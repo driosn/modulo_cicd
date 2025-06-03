@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "935963950308",
+    "project_id": "residentportal-mobile-dev",
+    "storage_bucket": "residentportal-mobile-dev.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935963950308:android:c466d7532c0227bc1d40f1",
+        "android_client_info": {
+          "package_name": "com.manageamerica.residentportal.dev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClEVqh1YcY-1mdf82MfOqkJUK5P9bIMiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

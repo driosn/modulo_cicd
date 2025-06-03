@@ -1,0 +1,812 @@
+{
+  "aDifferentAmountOption": "Un monto diferente",
+  "aDifferentMobileNumber": "Un número de móvil diferente",
+  "aboutMakingPayments": "Acerca de Realizar Pagos",
+  "aboutRoutingAccount": "Localizar información de la cuenta",
+  "accordionCloseAll": "Cerrar todo",
+  "accordionOpenAll": "Abrir todo",
+  "accountInfoUpdated": "Información de cuenta actualizada",
+  "accountInformationUpdated": "Información de cuenta actualizada",
+  "accountNumber": "Número de cuenta",
+  "addACheckingOrSavingsAccount": "Agregue una cuenta corriente o de ahorros",
+  "addAPaymentAccount": "Agregar una cuenta de pago",
+  "addCheckingSavingsAccount": "Agregue una cuenta corriente o de ahorros.",
+  "addNewPaymentAccountSavesYou": "Agregar una cuenta de pago le permite ahorrar tiempo al pagar sus facturas. Úsela con AutoPay y para realizar pagos únicos.",
+  "addressEmptyValidation": "Ingrese dirección",
+  "addressField": "Dirección",
+  "agreeTermsAuthorize": "Acepto los términos y autorizo el retiro mensual de fondos de mi cuenta bancaria.",
+  "agreeTermsAuthorizePayByText": "Acepto los términos para usar Pay By Text.",
+  "allowUpForFortyEightHours": "Espere hasta 48 horas para que el monto total adeudado se actualice en {appName} después de haber realizado un pago.",
+  "@allowUpForFortyEightHours": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "allowUpTo48": "Su pago está siendo procesado. Espere hasta 48 horas para que el monto pagado se actualice en {appName}.",
+  "@allowUpTo48": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "amount": "MONTO",
+  "amountDoesNotOnMyBill": "El monto adeudado en mi factura no coincide con el monto en {appName}.",
+  "@amountDoesNotOnMyBill": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "amountDue": "Monto adeudado",
+  "amountDueMayVaryEachMonth": "(El monto adeudado puede variar cada mes)",
+  "amountNotGreaterThanOne":  "El monto ingresado debe ser mayor que $1.00.",
+  "amountOweAndAnyAdditional": "El monto que debe ahora y cualquier monto adicional impago.",
+  "amountOweFromCurrentBill": "El monto que debe de una factura actual.",
+  "amountPaid": "MONTO PAGADO",
+  "announcementsCardNew": "Nuevos",
+  "announcementsCardTitle": "Anuncios",
+  "announcementsCardViewAll": "VER TODO",
+  "announcementsDummyFrom": "De: Su centro comunitario",
+  "announcementsDummyWelcome": "¡Bienvenidos a Fairfield Village! Blythe Mattie es la administradora de su comunidad. Contáctela con preguntas. (123) 456-7890.",
+  "announcementsEmpty": "No hay anuncios, revisa más tarde.",
+  "atLeast1NumberField": "Al menos 1 número",
+  "atLeast1SymbolField": "Al menos 1 símbolo ( ! @ # $ % ^ & * ( ) + = )",
+  "authDeclined": "Autorización Denegada",
+  "authRequired": "Autorización Requerida",
+  "authorizationDescription": "Por la presente, autorizo y solicito que se debite mi cuenta bancaria o se cargue mi tarjeta de crédito, según seleccioné anteriormente, por la cantidad especificada anteriormente.",
+  "authorizeYourPaymentTitle": "Autorice Su Pago",
+  "autoPay": "AutoPay",
+  "autoPayEnabled": "AutoPay Activado",
+  "autoPaySettings": "Configuración de AutoPay",
+  "autoPayStartDate": "Fecha de inicio del pago automático",
+  "autoPayStarted": "AutoPay Iniciado",
+  "automaticallyPayInfo": "Pague automáticamente la renta cuando venza su factura",
+  "autopayEftDescription": "Usted está suscrito en el programa de débitos directos de Transferencia Electrónica de Fondos (Electronic Funds Transfer). Estos pagos automáticos ya cubren su renta todos los meses. Antes de configurar AutoPay, comuníquese con su comunidad para cancelar su suscripción a los pagos EFT.",
+  "autopayNotEnabled": "AutoPay No Activado",
+  "autopayOff": "AutoPay DESACTIVADO",
+  "autopayOn": "AutoPay ACTIVADO",
+  "autopayOnDate": "AutoPay el",
+  "bankAccount": "Cuenta Bancaria",
+  "bankAccountDebited": "Se debitará de su cuenta bancaria el monto total adeudado.",
+  "beSureToPay": "Asegúrese de utilizar otra opción para pagar sus saldos adeudados.",
+  "begins": "Comienza el ",
+  "billDeliveryAddEmail": "Agregar un nuevo correo electrónico",
+  "billDeliveryAddMail": "Agregar una nueva dirección de envíos",
+  "billDeliveryAddPhone": "Agregar un nuevo número de móvil",
+  "billDeliveryEmailOption": "Correo Electrónico",
+  "billDeliveryMailOption": "Correo Postal",
+  "billDeliveryPhoneOption": "Teléfono (por mensaje de texto)",
+  "billDeliveryTab": "Envío de Facturas",
+  "billDeliveryUpdateContactInformation": "Actualice su información de contacto",
+  "billingMonthLabel": "MES DE FACTURACIÓN",
+  "billingSettingsTitle": "Configuración de Facturación",
+  "billsAndPayment": "Historial de Facturación y Pagos",
+  "billsLabel": "Facturas",
+  "biometricLoginDisclaimer": "¿Le gustaría ahorrar tiempo y activar el inicio de sesión segura usando {authenticationType}?",
+  "@biometricLoginDisclaimer": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "cancel": "Cancelar",
+  "cancelAutoPay": "Cancelar AutoPay",
+  "cancelAutoPayFor": "Cancelar Configuración de AutoPay",
+  "cancelAutoPaySetup": "Cancelar Configuración AutoPay",
+  "cancelButton": "CANCELAR",
+  "cancelPayByTextSetup": "Cancelar Configuración de Pay By Text",
+  "cancelPayment": "CANCELAR PAGO",
+  "cancelPaymentDialogContent": "Cancelar y volver a ver los pagos adeudados.",
+  "cancelSetup": "CANCELAR CONFIGURACIÓN",
+  "cancellingTheSetupWillDelete": "Al cancelar la configuración, se eliminará la información que ingresó, excepto la cuenta de pago. La guardaremos para que pueda pagar su saldo pendiente.",
+  "cashPay": "CashPay",
+  "cashPayDescription": "Le permite pagar personalmente su renta en efectivo, en las sucursales participantes de CashPay.",
+  "cashPayNoAccount": "Esta residencia no tiene una cuenta de CashPay.",
+  "cellPhoneField": "Teléfono móvil",
+  "changeLanguage": "Cambiar idioma",
+  "changeLanguageQuestion": "¿Cambiar idioma?",
+  "changeMobileNumber": "Cambiar número de móvil",
+  "changePaymentAccount": "Actualizar cuenta de pago",
+  "changePaymentDate": "Cambiar fecha de pago",
+  "changeTheAccount": "Cambiar la cuenta",
+  "changeTheAmount": "Cambiar el monto",
+  "changeTheDate": "Cambiar la fecha",
+  "changeTheMobilePhone": "Cambiar el número de móvil",
+  "changeWithdrawal": "Cambiar monto de retiro",
+  "changesBillingSettingsSavedSuccessfully": "Configuración de facturación actualizada",
+  "changesPreferredLanguageSavedSuccessfully": "Idioma preferido actualizado",
+  "changesSavedSuccessfully": "Cambios guardados correctamente",
+  "charactersField": "8 a 64 caracteres",
+  "checkYourBill": "Ver detalles en factura",
+  "checking": "Corriente",
+  "checkingAccount": "Cuenta corriente",
+  "checkingAccountDeleted": "Cuenta corriente eliminada",
+  "cityEmptyValidation": "Ingrese ciudad",
+  "cityField": "Ciudad",
+  "close": "CERRAR",
+  "communityAcceptsPayments": "Su comunidad acepta pagos los siguientes días de cada mes. El monto se debitará automáticamente de su cuenta en esa fecha.",
+  "communityAcceptsPaymentsOn": "Su comunidad acepta pagos {day} de cada mes. El monto se debitará automáticamente de su cuenta en esa fecha.",
+  "@communityAcceptsPaymentsOn": {
+    "placeholders": {
+      "day": {
+        "example": "tercer",
+        "type": "String"
+      }
+    }
+  },
+  "communityCardExplore": "EXPLORE SU COMUNIDAD",
+  "communityCardTitle": "Fairfield Village",
+  "confirm": "Confirmar",
+  "confirmAccountNumber": "Confirmación de número de cuenta",
+  "confirmNewPasswordField": "Confirmar nueva contraseña",
+  "confirmPasswordField": "Confirmar la nueva contraseña",
+  "confirmUpdate": "Confirmar actualización",
+  "confirmYourChanges": "Confirme sus cambios",
+  "contactInformationLabel": "Información de Contacto",
+  "continueT": "Continuar",
+  "createAPasswordField": "Cree una contraseña para su cuenta.",
+  "creditCard": "Tarjeta de Crédito",
+  "creditCardInfo": "Tarjeta de Crédito. Se agregará una tarifa de $45 (3%)",
+  "creditCardOrMobileWallet": "Tarjeta de Crédito o Billetera Móvil",
+  "current": "Actual",
+  "currentBalance": "Saldo Actual",
+  "currentDue": "Pago actual",
+  "currentPasswordField": "Contraseña Actual",
+  "currentRent": "Renta Actual",
+  "dataChargesMayApply": "(Pueden aplicarse cargos por datos)",
+  "day": "día",
+  "dayOfMonth": "{day} día del mes",
+  "@dayOfMonth": {
+    "placeholders": {
+      "day": {
+        "example": "Cuarto",
+        "type": "String"
+      }
+    }
+  },
+  "days": "días",
+  "daysBeforeDueDate": "Días antes de la fecha de vencimiento",
+  "debitAuthorization": "Autorización de Débito",
+  "debitAuthorizationDescription": "Por la presente, autorizo y solicito que debiten de forma automática y mensual de mi cuenta bancaria en la fecha seleccionada más arriba el monto de Pago automático mensual que seleccioné antes.Anteriormente proporcioné información de mi cuenta bancaria, ya sea a través de la sección “Administrar cuenta” de “Mi cuenta” en el sitio web o la sección “Cuenta de pago” en la aplicación móvil. Si algún monto de Pago automático autorizado no está disponible en mi cuenta bancaria, me cobrarán cargos por pago atrasado y/o cargos por cheques rechazados según mi Contrato de arrendamiento o alquiler, así como cualquier cargo por fondos insuficientes o sobregiro que pueda cobrar mi banco. Entiendo que es mi responsabilidad actualizar la información de mi cuenta bancaria según sea necesario y garantizar que haya fondos suficientes disponibles para pagar el monto de Pago automático anterior en la fecha de cada débito o cargo mensual. Además, entiendo que, si cierro la cuenta bancaria designada, designaré otra cuenta bancaria o haré arreglos oportunos para que los pagos se realicen de otra manera. Esta autorización de Pago automático permanecerá vigente hasta que cambie mis elecciones de Pago automático (pero entiendo que cualquier transacción de Pago automático que ya esté en proceso en el momento de cualquier cambio aún puede completarse), o hasta que me envíen un aviso de cancelación del servicio de Pago automático con 15 días de anticipación. Entiendo, reconozco y acepto que al hacer clic en esta autorización de pago automático, proporciono mi firma electrónica (también conocida como “escrito firmado por mí”) para autorizar los pagos automáticos.",
+  "deleteAccount": "ELIMINAR CUENTA",
+  "deletePaymentAccount": "Eliminar cuenta de pago",
+  "deletePaymentAccountInfo": "Su cuenta de pago será eliminada.",
+  "description": "DESCRIPCIÓN",
+  "descriptionAutoPay": "AutoPay debita su cuenta bancaria automáticamente cuando venzan sus pagos. Cada uno de sus cobros puede tener una configuración de AutoPay diferente. Configurarlo solo toma unos minutos.",
+  "descriptionPayByText": "El pago mediante mensaje de texto es una alternativa a AutoPay para realizar pagos automáticos. Cada mes, cuando venza su factura, recibirá un mensaje de texto. Confirme el monto adeudado, ingrese su número de teléfono, responda SÍ y se realizará su pago.",
+  "doYouWantToCancelAutoPayDate": "¿Quiere cancelar la actualización de su fecha de pago de AutoPay?",
+  "doYouWantToCancelChangePaymentAccount": "¿Desea cancelar la actualización de su cuenta bancaria?",
+  "doesNotMatchAccountNumber": "Los números de cuenta deben coincidir",
+  "doesNotMatchPassword": "Las contraseñas deben coincidir",
+  "done": "Listo",
+  "drawerAnnouncements": "Anuncios",
+  "drawerCommunity": "Comunidad",
+  "drawerCommunityMap": "Mapa de la propiedad",
+  "drawerCommunityThings": "Cosas por saber",
+  "drawerDashboard": "Resumen",
+  "drawerEndUserLicenseAgreement": "Acuerdo de Licencia del Usuario Final",
+  "drawerHelp": "Ayuda",
+  "drawerMyAccount": "Mi Cuenta",
+  "deleteMyAccount": "Eliminar mi cuenta",
+  "drawerMyAccountCommunication": "Medios de Comunicación",
+  "drawerMyAccountContact": "Información de Contacto",
+  "drawerMyAccountDelete": "Eliminar Mi Cuenta",
+  "drawerMyAccountFeedback": "Denos su Opinión",
+  "drawerMyAccountLanguagePreference": "Preferencia de Idioma",
+  "drawerMyAccountPrivacy": "Política de Privacidad",
+  "drawerMyAccountRegister": "Añadir una Residencia",
+  "drawerMyAccountTerms": "Términos de Uso",
+  "drawerMyAccountUser": "Configuración de Inicio de Sesión",
+  "drawerPayments": "Pagos",
+  "drawerPaymentsAutopay": "AutoPay",
+  "drawerPaymentsBills": "Historial de Facturación y Pagos",
+  "drawerPaymentsHistory": "Historial de Pagos",
+  "drawerPaymentsMake": "Realizar un Pago",
+  "drawerEverywareCashPay":"Pague con un Código de Barras",
+  "drawerPaymentsMethods": "Cuenta de Pago",
+  "drawerPaymentsPayByText": "Pay By Text",
+  "drawerPaymentsSettings": "Configuración de Facturación",
+  "dueDate": "Fecha de\nVencimiento",
+  "dueDateReminder": "Los recordatorios le ayudan a recordar que debe realizar un pago [X días] antes de su vencimiento.",
+  "dueDateReminderTab": "Recordatorio de Pago",
+  "dummyAugust2023": "Agosto 2023",
+  "dummyDecember2023": "Diciembre 2023",
+  "dummyJuly2023": "Julio 2023",
+  "dummyNovember2023": "Noviembre 2023",
+  "dummyOctober2023": "Octubre 2023",
+  "dummySeptember2023": "Septiembre 2023",
+  "editButton": "EDITAR",
+  "editEmail": "Editar Correo Electrónico",
+  "editLabel": "Editar",
+  "editPaymentAccount": "Editar cuenta de pago",
+  "editUsername": "Editar Nombre de Usuario",
+  "emailAddress": "Correo Electrónico",
+  "emailDeliveryOptionAlert": "¿Enviar facturas a su correo electrónico?",
+  "emailEmptyValidation": "Ingrese correo electrónico",
+  "emailField": "Correo Electrónico",
+  "emailIncorrectFormatValidation": "Formato incorrecto",
+  "emailUpdated": "Dirección de correo actualizada",
+  "enableLoginWithBiometrics": "Activar inicio de sesión con {authenticationType}",
+  "@enableLoginWithBiometrics": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "enrollInAutoPay": "Suscríbase en AutoPay",
+  "enter": "Ingresar",
+  "enterAccountNumber": "Ingrese el número de cuenta",
+  "enterAmountError": "Ingrese un monto",
+  "enterAmountLabel": "Ingrese un monto",
+  "enterCodeBody": "Un código de acceso de residente fue enviado por correo electrónico a\n{email}.\nIngrese el código a continuación",
+  "@enterCodeBody": {
+    "placeholders": {
+      "email": {
+        "example": "jdoe@gmail.com",
+        "type": "String"
+      }
+    }
+  },
+  "enterCodeTitle": "Ingrese el código de acceso",
+  "eftEnrolledNotification": "Está inscrito en el débito directo mediante transferencia electrónica de fondos. Estos pagos automáticos ya cubren su alquiler todos los meses. Antes de configurar el pago automático, comuníquese con su comunidad para cancelar la inscripción en los pagos mediante transferencia electrónica de fondos.",
+  "enterFiveDigits": "Ingrese 5 dígitos",
+  "enterMobileNumber": "Ingrese un número de teléfono móvil",
+  "enterNineDigits": "Ingrese 9 dígitos",
+  "enterThreeDigits": "Ingrese 3 dígitos",
+  "enterYourNewAutoPaymentAccount": "Ingrese la información de su nueva cuenta de AutoPay. La nueva cuenta reemplazará a la actual.",
+  "enterYourNewAutoPaymentDate": "Ingrese la nueva fecha de pago. La nueva fecha reemplazará a la actual.",
+  "estimatedFeeInfo": "Tarifa estimada: ",
+  "expenseToBePaid": "Cargo a Pagar",
+  "explainerButton": "OK, ENTENDIDO!",
+  "explainerText": "{appName} le permite pagar sus cuentas de manera conveniente y realizar otras tareas relacionadas a su comunidad en cualquier momento.\n\n{appName} funciona de forma independiente de su oficina comunitaria.\n\nSi tiene problemas críticos, por favor contacte a su administrador comunitario.",
+  "@explainerText": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "eula": "ALUF",
+  "faqCategories": "Categorías FAQ",
+  "fieldRequired": "{field} requerido",
+  "@fieldRequired": {
+    "placeholders": {
+      "field": {
+        "example": "Nombre de la cuenta",
+        "type": "String"
+      }
+    }
+  },
+  "fifth": "Quinto",
+  "findALocation": "Encuentre una sucursal",
+  "first": "Primer",
+  "fixedAmount": "Monto fijo de {amount}",
+  "@fixedAmount": {
+    "placeholders": {
+      "amount": {
+        "example": "$1.700",
+        "type": "String"
+      }
+    }
+  },
+  "forgotUsernamePasswordLabel": "¿Olvidó su nombre de usuario o contraseña?",
+  "forgotUsernamePasswordTitle": "¿Olvidó su nombre de usuario o contraseña?",
+  "fourth": "Cuarto",
+  "frequentlyAskedQuestions": "Preguntas Frecuentes",
+  "fullAmount": "Monto total",
+  "fullAmountNotExceed": "Monto total, no superar {maxAmount}",
+  "@fullAmountNotExceed": {
+    "placeholders": {
+      "maxAmount": {
+        "example": "$1.700",
+        "type": "String"
+      }
+    }
+  },
+  "fullTermsOfAgreement": "Términos completos del acuerdo",
+  "gettingYourPaymentReady": "Preparando su pago....",
+  "goBack": "REGRESAR",
+  "goToWebsiteButton": "IR AL SITIO WEB",
+  "hintPasswordLabel": "Ingresa de 8 a 64 caracteres",
+  "hintTextInputField": "¡Yo hablo español!",
+  "homeLoan": "Préstamo hipotecario",
+  "homePhoneField": "Teléfono de casa",
+  "howLoginWithBiometrics": "¿Cómo configuro {authenticationType}?",
+  "@howLoginWithBiometrics": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "iJustPaidIStillHaveBalance": "Acabo de pagar pero todavía tengo saldo en {appName}. ¿Por qué?",
+  "@iJustPaidIStillHaveBalance": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "inProgress": "En Progreso",
+  "informativeMessageContactInformation": "Esta dirección de correo electrónico es donde se le notifica sobre cambios en su nombre de usuario y contraseña y donde se envían los recibos de pago. Para cambiar la dirección de correo electrónico donde recibe las facturas, vaya a Pagos > Configuración de Facturación.",
+  "institutionMustBeThree": "El número de institución debe tener 3 dígitos",
+  "institutionNumber": "Número de institución",
+  "invalidLogInInformation": "Información de inicio de sesión no válida",
+  "invalidNumber": "Número inválido",
+  "languageField": "Idioma",
+  "languagePreferenceDescription": "Su selección se aplicará al texto en la aplicación móvil, a correos electrónicos relacionados con su cuenta y a Pay by Text.",
+  "languageSelectedField": "Idioma seleccionado:",
+  "leaseOption": "Opción de arrendamiento",
+  "legalDocuments": "Documentos legales",
+  "letsRiviewYourAutoPay": "Revise su configuración. Si todo parece ser correcto, inicie AutoPay abajo.",
+  "letsRiviewYourPayByText": "Revise su configuración. Si todo parece ser correcto, continúe y actívela.",
+  "logInButton": "INICIAR SESIÓN",
+  "logOut": "Salir",
+  "logOutDialog": "Se guardarán sus preferencias y configuración.",
+  "loginWithBiometrics": "Iniciar Sesión Con {authenticationType}",
+  "@loginWithBiometrics": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "mailDeliveryOptionAlert": "¿Enviar facturas a su dirección de envíos?",
+  "mailingAddressField": "Dirección de envíos",
+  "mailingAddressOption": "Dirección de envíos",
+  "makeAPayment": "Realizar un Pago",
+  "makeAPaymentEftDescription": "Está inscrito en el débito directo mediante transferencia electrónica de fondos. Estos pagos automáticos ya cubren su alquiler y los gastos mensuales. Puede realizar un pago adicional. Para cancelar la inscripción a los pagos mediante transferencia electrónica de fondos, comuníquese con su comunidad.",
+  "makePayment": "Hacer pago",
+  "manageYourHomeField": "Gestione su hogar a cualquier hora del día",
+  "mobilePhone": "Teléfono Móvil",
+  "mobilePhoneNumber": "Número de Teléfono Móvil",
+  "mobileWalletInfo": "Billetera Móvil. Se agregará una tarifa de $45 (3%)",
+  "monthlyWithdrawal": "Monto de Retiro",
+  "nDay": "{number, select, 1{día} other{días}}",
+  "@nDay": {
+    "description": "return day in singular or plural",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "nMonth": "{number, select, 1{Enero} 2{Febrero} 3{Marzo} 4{Abril} 5{Mayo} 6{Junio} 7{Julio} 8{Agosto} 9{Septiembre} 10{Octubre} 11{Noviembre} 12{Diciembre} other{Error}}",
+  "@nMonth": {
+    "description": "return month from number",
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "nameOnAccount": "Nombre en la cuenta",
+  "needHelpButton": "¿Necesita ayuda?",
+  "needHelpField": "¿Necesita ayuda?",
+  "needHelpRegisteringButton": "¿Necesita ayuda para registrarse?",
+  "newPasswordField": "Nueva contraseña",
+  "newPaymentAccount": "Nueva Cuenta de Pago",
+  "newPaymentAccountAdded": "Nueva cuenta de pago agregada",
+  "newPaymentAccountSaved": "Nueva cuenta de pago guardada",
+  "newPaymentDateSaved": "Nueva fecha de pago guardada",
+  "nextButton": "SIGUIENTE",
+  "nextField": "Siguiente",
+  "noBills": "Aún no hay facturas disponibles.",
+  "noCancelUpperCase": "NO, CANCELAR",
+  "noPaymentDue": "Sin deuda pendiente",
+  "noPaymentDueDescription": "No hay ningún pago pendiente, pero puede pagar para un saldo futuro.",
+  "noPaymentReminderWillBeSent": "No se enviará ningún recordatorio de pago",
+  "noPayments": "Aún no se han realizado pagos.",
+  "occasionallyAmountDue": "En ocasiones, el monto adeudado en la aplicación {appName} no coincide con el monto total adeudado en su factura. Comuníquese con el administrador de su comunidad para obtener ayuda con el pago si esto ocurre.",
+  "@occasionallyAmountDue": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "off": "DESACTIVADO",
+  "ok": "Ok",
+  "on": "ACTIVADO",
+  "onStopPay": "Su opción para realizar pagos a través de {appName} se ha pausado. Pague sus facturas en persona en la oficina comunitaria.",
+  "@onStopPay": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "oneTimePaymentAuthorizationDescription": "Por la presente, autorizo y solicito que debiten de mi cuenta bancaria o facturen a mi tarjeta de crédito, como seleccioné anteriormente, el monto especificado más arriba. Si he elegido debitar el importe de mi cuenta bancaria, he proporcionado información de mi cuenta bancaria previamente, ya sea a través de la sección “Administrar cuenta” de “Mi cuenta” en el sitio web o la sección “Cuenta de pago” en la aplicación móvil, y autorizo el uso de esta cuenta. Si el monto autorizado no está disponible en mi cuenta bancaria o de acuerdo con mi cuenta de tarjeta de crédito, entiendo y acepto que me cobrarán cargos por pago atrasado y/o cargos por cheques rechazados según mi Contrato de arrendamiento o alquiler, así como cualquier cargo por fondos insuficientes o sobregiro que pueda cobrar mi banco o compañía de tarjeta de crédito. Entiendo que es mi responsabilidad actualizar la información de mi cuenta bancaria según sea necesario y garantizar que haya crédito o fondos suficientes disponibles para pagar el monto anterior. Entiendo, reconozco y acepto que al hacer clic en esta autorización de pago único, proporciono mi firma electrónica (también conocida como “escrito firmado por mí”) para autorizar el pago único.",
+  "orField": "O",
+  "paid": "Pago",
+  "passwordEmptyValidation": "Ingrese una contraseña",
+  "passwordField": "Contraseña",
+  "passwordMatchField": "Contraseña y confirmación deben coincidir",
+  "passwordMissingNumber": "Número faltante",
+  "passwordMissingSymbol": "Símbolo faltante",
+  "passwordRequiredField": "Se requiere contraseña",
+  "passwordTooLongValidation": "Muy largo",
+  "passwordTooShortValidation": "Muy corto",
+  "passwordUpdated": "Contraseña actualizada",
+  "payByText": "Pay By Text para Renta",
+  "payByTextAuthorization": "Autorización de Pay By Text",
+  "payByTextOff": "Pay By Text DESACTIVADO",
+  "payByTextOn": "Pay By Text ACTIVADO",
+  "payByTextSettings": "Configuración de Pay By Text",
+  "payByTextStarted": "Pay By Text Iniciado ",
+  "payHalfFlex": "Pague la mitad ahora, la mitad después con flex",
+  "payNow": "PAGAR AHORA",
+  "payNowWith": "Pague ahora con su cuenta bancaria,\ntarjeta de crédito o billetera móvil",
+  "payNowWithThisAcc": "Paga ahora con esta cuenta",
+  "payment": "Pago",
+  "paymentAccount": "Cuenta de Pago",
+  "paymentAccountAdded": "Cuenta de pago agregada",
+  "paymentAccountDeleted": "Cuenta de Pago Eliminada",
+  "paymentAccountSetUp": "Configuración de Cuenta de Pago",
+  "paymentAccountWillBeDebitted": "Se debitará de su cuenta de pago para pagar su [nombre de la factura]. Para realizar cambios, seleccione editar.",
+  "paymentAccounts": "Cuentas de pago",
+  "paymentAgreement": "Acuerdo de Pago",
+  "paymentAmount": "Pago",
+  "paymentCardGoToPayments": "IR A PAGOS",
+  "paymentCardLastPayment": "ÚLTIMO PAGO",
+  "paymentCardNoPrior": "Sin pago previo",
+  "paymentCardOnTime": "A tiempo",
+  "paymentCardRentBalance": "SALDO DE RENTA",
+  "paymentCardTitle": "Pagos",
+  "paymentDate": "Fecha de Pago",
+  "paymentDue": "Fecha de Pago",
+  "paymentDueDescription": "Debe pagar la renta total adeudado con CashPay.",
+  "paymentErrorAmountLowerThanMinimumTitle": "Monto Menor Al Mínimo",
+  "paymentErrorAmountLowerThanMinimumMessage": "Se require un pago mínimo de {amount}.",
+  "@paymentErrorAmountLowerThanMinimumMessage": {
+    "placeholders": {
+      "amount": {
+        "example": "$1.00",
+        "type": "String"
+      }
+    }
+  },
+  "paymentErrorGeneralTitle": "Ocurrió Un Error",
+  "paymentErrorGeneralMessage": "No pudimos realizar un pago con su cuenta.<br/>Por favor, contacte al administrador de su comunidad.",
+  "paymentErrorAmountExceedsMaximumTitle": "Monto de Pago Inválido",
+  "paymentErrorAmountExceedsMaximumMessage": "El monto máximo permitido es de {amount}",
+  "@paymentErrorAmountExceedsMaximumMessage": {
+    "placeholders": {
+      "amount": {
+        "example": "$1.00",
+        "type": "String"
+      }
+    }
+  },
+  "paymentErrorPreviousPaymentTitle": "Confirmar Pago Adicional",
+  "paymentErrorPreviousPaymentButton": "Autorizar Pago Adicional",
+  "paymentErrorPreviousPaymentMessage": "Se realizó un pago de {amount}, el {date}. Si aún desea realizar este pago, por favor, acepte la autorización y haga clic en Enviar. Para cancelar este pago adicional, seleccione Cancelar.",
+  "@paymentErrorPreviousPaymentMessage": {
+    "placeholders": {
+      "amount": {
+        "example": "$1.00",
+        "type": "String"
+      },
+      "date": {
+        "example": "01/01/2024",
+        "type": "String"
+      }
+    }
+  },
+  "paymentMethod": "MÉTODO DE PAGO",
+  "paymentMethodPascalCase": "Método de Pago",
+  "paymentSummary": "Resumen de Pago",
+  "paymentsDueTitle": "Pagos Adeudados",
+  "paymentsLabel": "Pagos",
+  "phoneDeliveryOptionAlert": "¿Enviar facturas por mensaje de texto a su teléfono móvil?",
+  "phoneEmptyValidation": "Número de móvil incompleto",
+  "phoneIncompleteValidation": "Número de móvil incompleto",
+  "phoneIncorrectLength": "Ingrese 10 números",
+  "phoneNumberField": "Número de teléfono móvil",
+  "phoneNumberHint": "Código de área + número",
+  "phoneNumberOrPasswordField": "Teléfono móvil o correo electrónico",
+  "pleaseAuthorizeYourPayment": "Por favor autorice su pago",
+  "posCodeCity": "Código del POS de la ciudad",
+  "posName": "Nombre del POS",
+  "postalCodeEmptyValidation": "Ingrese código postal",
+  "postalCodeField": "Código postal",
+  "postalCodeIncompleteValidation": "Ingrese 5 números",
+  "preferredLanguage": "Idioma Preferido",
+  "provideReasonAuthDeclined": "Indique el motivo por el que rechazó la autorización de los pagos con AutoPay para ayudarnos a brindarle un mejor servicio.",
+  "provideReasonAuthDeclinedPayByText": "Indique el motivo por el que rechazó la autorización de los pagos con Pay By Text para ayudarnos a brindarle un mejor servicio.",
+  "readyStartMakingPayment": "Usted está listo para comenzar a realizar pagos automáticos con AutoPay. Puede detener el pago automático en cualquier momento.",
+  "register": "Registro",
+  "registerBody": "Le enviaremos un código de acceso que le conectará con su comunidad.",
+  "registerButton": "AÑADIR RESIDENCIA",
+  "registerSiteDescription": "{appName} le permite administrar más de una residencia con su cuenta de usuario. Si usted tiene más de una residencia, regístrelas aquí con el código de residencia. Si no tiene el código de residencia, contacte al administrador de su comunidad.",
+  "registerTitle": "Ingrese su dirección de correo electrónico",
+  "remindersOff": "Recordatorios DESACTIVADOS",
+  "remindersOn": "Recordatorios ACTIVADOS",
+  "removeSelectedLanguageField": "Eliminar idioma seleccionado",
+  "rent": "Renta",
+  "rentToOwn": "Renta con opción de compra",
+  "required": "Requerido",
+  "resendAccessCodeButton": "REENVIAR CÓDIGO DE ACCESO",
+  "residentPortalNotAvailable": "{appName} actualmente no está disponible para su comunidad. Puede seguir usando la versión web.",
+  "@residentPortalNotAvailable": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "reviewAutoPaySetUp": "Resumen de AutoPay",
+  "routingAccountInfo": "Información de la Cuenta Bancaria",
+  "routingMustBeNine": "El número de ruta debe tener 9 dígitos",
+  "routingNumber": "Número de ruta",
+  "sameAsSiteAddressLabel": "La misma que la dirección de residencia",
+  "saveAccount": "Guardar cuenta",
+  "saveButton": "GUARDAR",
+  "saveChanges": "Guardar cambios",
+  "savings": "Ahorros",
+  "savingsAccount": "Cuenta de ahorros",
+  "search": "Buscar",
+  "second": "Segundo",
+  "secureAuthenticationDisabled": "Autenticación con {authenticationType} ha sido desactivada",
+  "@secureAuthenticationDisabled": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "secureAuthenticationEnabled": "Autenticación con {authenticationType} ha sido activada",
+  "@secureAuthenticationEnabled": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "secureAuthenticationField": "AUTENTICACIÓN SEGURA",
+  "secureAuthentication": "Autenticación Segura",
+  "secureAuthenticationInfo": "{authenticationType} le permite iniciar sesión de forma segura sin ingresar su nombre de usuario y contraseña.",
+  "@secureAuthenticationInfo": {
+    "placeholders": {
+      "authenticationType": {
+        "example": "Fingerprint",
+        "type": "String"
+      }
+    }
+  },
+  "selectExpense": "Seleccione el cargo",
+  "selectPaymentDate": "Seleccione una Fecha de Pago",
+  "selectYourPreferredLanguage": "Seleccione su idioma preferido",
+  "selectedPaymentDate": "{paymentDay} día del mes",
+  "@selectedPaymentDate": {
+    "placeholders": {
+      "paymentDay": {
+        "example": "Primer",
+        "type": "String"
+      }
+    }
+  },
+  "sendAnEmailReminder": "Enviar un recordatorio por correo electrónico antes de la fecha de vencimiento.",
+  "sendBillsBy": "Enviar facturas por:",
+  "sendBillsToYour": "Enviar facturas a su",
+  "sessionExpiredPrompt": "Su sesión ha expirado. Por favor, inicie sesión de nuevo.",
+  "setPreferencesForMailText": "En Preferencias de Comunicación puede establecer sus preferencias de la correspondencia que recibe.",
+  "setUpPaymentAccount": "Configurar una Cuenta de Pago",
+  "settings": "Configuración",
+  "setupAutoPay": "Configurar AutoPay",
+  "setupAutoPayFor": "CONFIGURAR AUTOPAY PARA",
+  "setupBillingPreferences": "Configurar preferencias de pago",
+  "setupPayByText": "Configuración de Pay By Text",
+  "seventh": "Séptimo",
+  "showPaymentDueTile": "Mostrar pago pendiente",
+  "sigInButton": "INICIAR SESIÓN",
+  "sigInFacebook": "Continúe con Facebook",
+  "sigInGoogle": "Continúe con Google",
+  "signOutButton": "CERRAR SESIÓN",
+  "signOutPrompt": "Ha cerrado la sesión con éxito",
+  "site": "Residencia",
+  "siteAddress": "Residencia",
+  "siteAddressHint": "Dirección de la residencia",
+  "siteBalance": "Saldo de la residencia",
+  "siteBalanceLabel": "Saldo de la residencia",
+  "siteBalancePascalCase": "Renta",
+  "siteBalanceSubtitle": "(El monto total adeudado puede variar)",
+  "sitePaymentAccount": "Cuenta de pago de la residencia",
+  "siteRegistrationCodeHint": "Ingresa el código",
+  "siteRegistrationCodeLabel": "Código de Residencia",
+  "sixth": "Sexto",
+  "skip": "Omitir",
+  "skipSetUpForNow": "OMITIR CONFIGURACIÓN POR AHORA",
+  "socialLoginButton": "Continúe con {socialNetwork}",
+  "@socialLoginButton": {
+    "placeholders": {
+      "socialNetwork": {
+        "example": "Instagram",
+        "type": "String"
+      }
+    }
+  },
+  "startAutoPay": "Iniciar AutoPay",
+  "startPayByText": "Iniciar Pay By Text",
+  "stateEmptyValidation": "Seleccione un estado",
+  "stateField": "Estado",
+  "statesTitle": "ESTADOS",
+  "stoppingAutoPayOccurs": "Los pagos no serán debitados automáticamente de su cuenta.",
+  "subjectRentCharges": "Asunto,{rentValue} Renta + Cargos",
+  "@subjectRentCharges": {
+    "placeholders": {
+      "rentValue": {
+        "example": "$500.00",
+        "type": "String"
+      }
+    }
+  },
+  "thankYou": "Gracias",
+  "thankYouPayment": "Gracias por su pago",
+  "theAmountMayVary": "(El monto puede variar cada mes)",
+  "theLanguageChangeWillTakeEffect": "El cambio de idioma tendrá efecto inmediatamente en la aplicación y también en todas las notificaciones futuras.",
+  "third": "Tercer",
+  "thisNumberWillNoReplace": "Este número no reemplazará el número de teléfono móvil de contacto establecido en la configuración de su cuenta.",
+  "total": "Total",
+  "totalBalance": "Saldo Total",
+  "totalDue": "Pago total",
+  "totalPaymentAmountIncludes": "El monto total del pago incluye una tarifa de procesamiento.",
+  "transactionN": "TRANSACCIÓN #",
+  "transitMustBeFive": "El número de tránsito debe tener 5 dígitos",
+  "transitNumber": "Número de tránsito",
+  "typeNameExactly": "Ingrese el nombre tal como se muestra",
+  "typeOfAccount": "Tipo de cuenta",
+  "updateAccount": "Actualizar Cuenta",
+  "updateAPasswordField": "Requerimientos de contraseña de {appName}",
+  "@updateAPasswordField": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "updateAutoPayDates": "Cambiar fecha de pago recurrente",
+  "updateCheckingSavingsAccount": "Ingrese la información de su nueva cuenta. La nueva cuenta reemplazará a la actual.",
+  "updateMailingAddress": "Actualizar dirección",
+  "updatePassword": "Actualizar Contraseña",
+  "useSiteAddressLabel": "Usar la dirección de residencia",
+  "username": "Nombre de Usuario",
+  "usernameEmptyValidation": "Ingrese su nombre de usuario",
+  "usernameUpdated": "Nombre de usuario actualizado",
+  "version": "Versión",
+  "welcomeField": "Bienvenido",
+  "welcomeText": "¡Empecemos!",
+  "welcomeTextBold": "¡nueva experiencia!",
+  "westernUnionAccount": "Cuenta de Western Union",
+  "westernUnionFee": "Tarifa de $3.20 por transacción",
+  "whatIsCurrentBalance": "Qué es la Renta Actual?",
+  "whatIsTotalBalance": "¿Qué es la Renta Total?",
+  "whatLanguageField": "¿Qué idioma prefiere?",
+  "whatNumberShouldWeSend": "¿A qué número debemos enviar recordatorios de facturas y mensajes de Pago By Text?",
+  "withdrawalAmountLabel": "Monto de Retiro",
+  "withdrawalCancelSetupButton": "CANCELAR CONFIGURACIÓN",
+  "withdrawalDoNotExceedLabel": "No exceder:",
+  "withdrawalExactlyLabel": "Monto fijo:",
+  "withdrawalFixedAmountFirstPart": "Si el monto fijo es menor que el monto total adeudado, este no se debitará. Cuando esto ocurra, recibirá un correo electrónico notificándole antes de la fecha de vencimiento. Realice un pago por el monto adeudado antes de la fecha de vencimiento en la aplicación {appName} o mediante otro método proporcionado por su comunidad.",
+  "@withdrawalFixedAmountFirstPart": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "withdrawalFixedAmountOption": "Un monto fijo",
+  "withdrawalFixedAmountReview": "Monto fijo de",
+  "withdrawalFixedAmountSecondPart": "El monto fijo será debitado incluso cuando no tenga un saldo adeudado o tenga un saldo acreedor.",
+  "withdrawalFullAmountOption": "El monto total adeudado",
+  "withdrawalFullAmountDueReview": "Monto total adeudado",
+  "withdrawalFullAmountReview": "Monto total adeudado no exceda",
+  "withdrawalFullAmountWithConditionOption": "El monto total adeudado, pero sólo si este no excede una cierta cantidad",
+  "withdrawalFullAmountWithConditionReview": "Monto total adeudado",
+  "withdrawalMountQuestionLabel": "¿Cuánto quiere que sea el retiro mensual con AutoPay? El total adeudado puede variar cada mes dependiendo de sus cargos.",
+  "withdrawalNextButton": "NEXT",
+  "yesCancel": "SI, CANCELAR",
+  "yesUpperCase": "SÍ",
+  "youAreEnrolledInEft": "Está inscrito en EFT",
+  "youHaveNotAgreedTerms": "No ha aceptado autorizar débitos en su cuenta de pago. Se requiere autorización para realizar pagos con AutoPay.",
+  "youHaveNotAgreedTermsPayByText": "No ha aceptado autorizar débitos de su cuenta de pago. Se requiere de su autorización para realizar pagos con Pay By Text.",
+  "youMustSelectAPaymentMethod": "Debe seleccionar un método de pago.",
+  "youMustAuthorizeYourPayment": "Debe autorizar su pago.",
+  "youWillReceiveABill": "Recibirá una factura por [método] que detallará los cargos antes de la fecha de vencimiento.",
+  "youWillReceiveAPayment": "Recibirá un recibo de pago por correo electrónico después de que se haya realizado el pago.",
+  "youWillReceiveAReminder": "{nDays, select, 1{Usted recibirá un recordatorio {nDays} día antes de la fecha de vencimiento} other{Usted recibirá un recordatorio {nDays} días antes de la fecha de vencimiento}}",
+  "@youWillReceiveAReminder": {
+    "placeholders": {
+      "nDays": {
+        "example": "1",
+        "type": "String"
+      }
+    }
+  },
+  "youWillTransferredPortal": "Será transferido al sitio web de {appName} para recuperar la información de su cuenta.",
+  "@youWillTransferredPortal": {
+    "placeholders": {
+      "appName": {
+        "example": "Community Resident Portal",
+        "type": "String"
+      }
+    }
+  },
+  "yourBalanceAutomatically": "Su saldo se pagará automáticamente.",
+  "yourPaymentDate": "Su Fecha de Pago",
+  "yourRemindersGo": "Enviar recordatorios de pago a su",
+  "yourSelectionWillApply": "Su selección se aplicará al texto en la aplicación móvil, a correos electrónicos relacionados con su cuenta y a Pay by Text.",
+  "yourTotalAmountWillBe": "Su monto total será:",
+  "zegoFee": "Tarifa de $4.00 por transacción",
+  "zegoPayLeaseCard": "Tarjeta Zego PayLease",
+  "currentDuePascal": "Pago Actual",
+  "totalDuePascal": "Pago Total",
+  "homeLoanDue": "Pago de Préstamo Hipotecario",
+  "rentToOwnLoanDue": "Pago de Renta con Opción de Compra",
+  "leaseOptionLoanDue": "Pago de Opción de Arrendamiento",
+  "paymentsSuspendedDescription": "Su comunidad ha suspendido la opción de realizar pagos para este sitio en la aplicación.\nComuníquese con ellos para obtener más información.",
+  "and": "y",
+  "byUsingTheAppYouAgreeToThe": "Al utilizar la aplicación, aceptas las",
+  "termsOfUse": "Condiciones de Uso",
+  "privacyPolicy": "Política de Privacidad",
+  "iAccept": "Acepto",
+  "iDecline": "Rechazo",
+  "declineTermsOfUseAndPrivacyPolicy": "Rechazar Condiciones de Uso y Política de Privacidad",
+  "acceptDocumentsIsRequired": "Aceptar la Política de Privacidad y Condiciones de Uso es requerido. Si lo rechazas, deberás aceptar los acuerdos más adelante.",
+  "goBackAndAccept": "VOLVER Y ACEPTAR",
+  "needHelpLoggingIn": "¿Necesita ayuda para iniciar sesión?",
+  "logInHelp": "Ayuda para el Inicio de Sesión",
+  "overpaymentTitle": "Pago en Exceso",
+  "overpaymentContent": "Usted está realizando el pago de un monto mayor que el saldo adeudado del préstamo. Al continuar, acepta que el monto excedente se aplicará como pago anticipado a su saldo total. Para aplicar el pago directamente a su saldo de capital, comuníquese con la oficina de su comunidad.",
+  "makeoverpayment":"REALIZAR PAGO EN EXCESO",
+  "loginSuccessful": "Inicio de sesión exitoso",
+  "faceIdLogInEnabled": "Inicio de sesión con Face ID habilitado",
+  "touchIdLogInEnabled": "Inicio de sesión con Touch ID habilitado",
+  "deleteAccountWarning": "Eliminar su cuenta cierra sesión en la aplicación Resident Portal y elimina todas las configuraciones, preferencias, método de pago y datos de la aplicación ingresados previamente.\n\nSi no se ha mudado de su hogar, asegúrese de pagar su alquiler y cargos directamente a su comunidad después de que su cuenta haya sido eliminada.",
+  "signOutInstead": "cerrar sesión en su lugar",
+  "warrningTextDelete": "Su cuenta, configuraciones, preferencias, método de pago y datos de la aplicación serán eliminados.",
+  "accountNotDeleted": "Cuenta no eliminada",
+  "accountNotDeletedSuccessfully": "Ocurrió un error y tu cuenta no fue eliminada. Por favor, inténtalo de nuevo.",
+  "accountDeleted": "Cuenta eliminada",
+  "accountDeletedSuccessfully": "Tu cuenta, configuraciones, preferencias, método de pago y datos de la aplicación han sido eliminados.",
+   "participatingRetailers": "Minoristas participantes",
+   "paymentsUpToMaxAmountAccepted": "Se aceptan pagos de hasta ${maximumPaymentAmount}",
+   "@paymentsUpToMaxAmountAccepted": {
+         "placeholders": {
+           "maximumPaymentAmount": {
+             "example": "$1499",
+             "type": "String"
+           }
+         }
+       },
+   "sevenEleven": "7-Eleven",
+   "paymentsUpTo999Accepted": "Se aceptan pagos de hasta $999",
+   "cvsPharmacy": "CVS Pharmacy",
+   "kroger": "Kroger",
+   "gomart": "Gomart",
+   "saveMart": "Save Mart",
+   "kwikTrip": "Kwik Trip",
+   "walgreensDuaneReed": "Walgreens / Duane Reed"
+}

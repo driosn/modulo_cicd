@@ -48,15 +48,8 @@ jobs:
       - name: Run tests
         run: flutter test
         
-      - name: Clean build
-        run: |
-          flutter clean
-          cd android
-          ./gradlew clean
-          cd ..
-        
       - name: Build AAB
-        run: flutter build appbundle --release -t lib/main_qa.dart
+        run: flutter build appbundle --release -t lib/main_qa.dart --flavor qa
         
       - name: Upload AAB to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "520790934167",
+    "project_id": "residentportal-mobile-qa",
+    "storage_bucket": "residentportal-mobile-qa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520790934167:android:92207d9477e28fc62d1fd2",
+        "android_client_info": {
+          "package_name": "com.manageamerica.residentportal.qa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7Kq5RTWo7IWH2cMSvNoqqDN9qMuoc2hk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

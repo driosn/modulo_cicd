@@ -49,7 +49,7 @@ jobs:
         run: flutter test
         
       - name: Build AAB
-        run: flutter build appbundle
+        run: flutter build appbundle --release -t lib/main_qa.dart
         
       - name: Upload AAB to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
